@@ -79,7 +79,7 @@ skeleton_bone-ELBOW_OFFSET = Przesunięcie Łokcia
 ## Tracker reset buttons
 
 reset-reset_all = Zresetuj wszystkie wymiary
-reset-full = Reset
+reset-full = Pełny Reset
 reset-mounting = Zresetuj Położenie
 reset-yaw = Reset Odchylenia
 
@@ -89,7 +89,7 @@ serial_detection-new_device-p0 = Wykryto Nowe Urządzenie.
 serial_detection-new_device-p1 = Wprowadź dane Wi-Fi!
 serial_detection-new_device-p2 = Wybierz co chcesz z nim zrobić.
 serial_detection-open_wifi = Połącz z Wi-Fi
-serial_detection-open_serial = Otwórz Konsole
+serial_detection-open_serial = Otwórz Konsolę
 serial_detection-submit = Potwierdź!
 serial_detection-close = Zamknij
 
@@ -130,7 +130,7 @@ widget-clear_mounting = Wyczyść resetowanie montażu
 
 widget-developer_mode = Tryb Dewelopera
 widget-developer_mode-high_contrast = Wysoki kontrast
-widget-developer_mode-precise_rotation = Precise rotation
+widget-developer_mode-precise_rotation = Wyświetlanie dokładniejszej rotacji
 widget-developer_mode-fast_data_feed = Szybkie przesyłanie danych
 widget-developer_mode-filter_slimes_and_hmd = Filtruj slimy i HMD
 widget-developer_mode-sort_by_name = Sortuj według nazwy
@@ -157,6 +157,7 @@ tracker-status-error = Error
 tracker-status-disconnected = Rozłączono
 tracker-status-occluded = Zablokowany
 tracker-status-ok = Połączono
+tracker-status-timed_out = Sesja wygasła
 
 ## Tracker status columns
 
@@ -214,6 +215,9 @@ tracker-settings-drift_compensation_section-edit = Allow drift compensation
 tracker-settings-name_section = Nazwa Trackera
 tracker-settings-name_section-description = Daj mu słodką nazwę :)
 tracker-settings-name_section-placeholder = Lewa noga Yexo
+tracker-settings-forget = Zapomnij o trackerze
+tracker-settings-forget-description = Usuwa moduł śledzący z serwera SlimeVR i uniemożliwia mu połączenie się z nim do czasu ponownego uruchomienia serwera. Konfiguracja modułu śledzącego nie zostanie utracona.
+tracker-settings-forget-label = Zapomnij o trackerze
 
 ## Tracker part card info
 
@@ -222,7 +226,7 @@ tracker-part_card-unassigned = Nieprzydzielony
 
 ## Body assignment menu
 
-body_assignment_menu = Gdzie chcesz żeby ten tracker był?
+body_assignment_menu = Gdzie chcesz przypisać ten tracker?
 body_assignment_menu-description = Wybierz miejsce gdzie tracker będzie przydzielony. Alternatywnie możesz ustawić wszystkie na raz.
 body_assignment_menu-show_advanced_locations = Pokaż zaawansowane położenia
 body_assignment_menu-manage_trackers = Zarządzaj wszystkimi trackerami
@@ -318,7 +322,7 @@ settings-general-tracker_mechanics-filtering-description =
     Przewidywanie przewiduje ruchy a Wygładzanie stara się wygładzić ruchy.
 settings-general-tracker_mechanics-filtering-type = Filtry
 settings-general-tracker_mechanics-filtering-type-none = Brak Filtrów
-settings-general-tracker_mechanics-filtering-type-none-description = Używa rotacji takimi jakimi są.
+settings-general-tracker_mechanics-filtering-type-none-description = Używa rotacji w niezmienionej formie. Wszystkie filtry są wyłączone.
 settings-general-tracker_mechanics-filtering-type-smoothing = Wygładzanie
 settings-general-tracker_mechanics-filtering-type-smoothing-description = Wygładza ruchy lecz dodaje trochę opóźnienia.
 settings-general-tracker_mechanics-filtering-type-prediction = Przewidywanie
@@ -641,8 +645,6 @@ onboarding-done-close = Zamknij Poradnik
 
 onboarding-connect_tracker-back = Cofnij się do ustawień Wi-Fi
 onboarding-connect_tracker-title = Połącz trackery
-onboarding-connect_tracker-description-p0 = Teraz czas na zabawę, połączenie wszystkich trackerów!
-onboarding-connect_tracker-description-p1 = Po prostu połącz wszystkie dotychczas nie połączone trackery za pomocą USB
 onboarding-connect_tracker-issue-serial = Mam problemy z połączeniem!
 onboarding-connect_tracker-usb = USB Tracker
 onboarding-connect_tracker-connection_status-none = Szukanie Trackerów
@@ -828,17 +830,9 @@ onboarding-automatic_mounting-put_trackers_on-next = Mam wszystkie trackery zał
 ## Tracker proportions method choose
 
 onboarding-choose_proportions = Jakiej metody kalibracji proporcji użyć?
-# Multiline string
-onboarding-choose_proportions-description =
-    Proporcje ciała służą do poznania wymiarów twojego ciała. Są wymagane do obliczenia pozycji trackerów.
-    Kiedy proporcje twojego ciała nie odpowiadają zapisanym, precyzja śledzenia będzie gorsza i zauważysz takie rzeczy, jak jazda na łyżwach lub ślizganie się, lub twoje ciało nie pasuje dobrze do twojego awatara.
 onboarding-choose_proportions-auto_proportions = Proporcje automatyczne
 # Italized text
 onboarding-choose_proportions-auto_proportions-subtitle = Zalecana
-onboarding-choose_proportions-auto_proportions-descriptionv2 =
-    To odgadnie twoje proporcje, rejestrując próbkę twoich ruchów i przepuszczając ją przez algorytm.
-    
-    <b>Wymaga podłączenia HMD do SlimeVR!</b>
 onboarding-choose_proportions-manual_proportions = Ręczne proporcje
 # Italized text
 onboarding-choose_proportions-manual_proportions-subtitle = Drobne detale
@@ -868,14 +862,6 @@ onboarding-automatic_proportions-put_trackers_on-title = Załóż trackery
 onboarding-automatic_proportions-put_trackers_on-description = Aby skalibrować proporcje, użyjemy trackerów które przed chwilą przypisałeś. Załóż wszystkie trackery, będziesz widział który to który na postaci po prawej.
 onboarding-automatic_proportions-put_trackers_on-next = Mam wszystkie trackery założone
 onboarding-automatic_proportions-requirements-title = Wymagania
-# Each line of text is a different list item
-onboarding-automatic_proportions-requirements-description =
-    Masz co najmniej wystarczającą liczbę trackerów do śledzenia twoich stóp (zazwyczaj 5 trackerów).
-    Masz włączone trackery i zestaw VR.
-    Masz na sobie trackery i zestaw VR.
-    Twoje urządzenia śledzące i zestaw VR są połączone z serwerem SlimeVR.
-    Twoje urządzenia śledzące i zestaw VR działają poprawnie na serwerze SlimeVR.
-    Twój zestaw VR przesyła dane pozycyjne do serwera SlimeVR (oznacza to ogólnie, że SteamVR działa i jest połączony ze SlimeVR za pomocą sterownika SlimeVR dla SteamVR).
 onboarding-automatic_proportions-requirements-next = Zapoznałem się z wymaganiami
 onboarding-automatic_proportions-check_height-title = Sprawdź swój wzrost
 onboarding-automatic_proportions-check_height-description = Używamy Twojego wzrostu jako podstawy naszych pomiarów, używając wzrostu HMD jako przybliżenia Twojego rzeczywistego wzrostu, ale lepiej samemu sprawdzić, czy są prawidłowe!
@@ -947,3 +933,12 @@ status_system-StatusSteamVRDisconnected =
        *[other] Nie można połączyć się ze SteamVR przez sterownik SlimeVR.
     }
 status_system-StatusTrackerError = Moduł śledzący { $trackerName } ma błąd.
+
+## Tray Menu
+
+
+## First exit modal
+
+
+## Unknown device modal
+
