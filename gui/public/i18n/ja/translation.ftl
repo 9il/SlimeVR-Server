@@ -38,8 +38,8 @@ body_part-RIGHT_LOWER_LEG = 右足
 body_part-RIGHT_FOOT = 右足先
 body_part-UPPER_CHEST = 上胸
 body_part-CHEST = 胸
-body_part-WAIST = 腰
-body_part-HIP = ヒップ
+body_part-WAIST = 胴体
+body_part-HIP = 腰
 body_part-LEFT_SHOULDER = 左肩
 body_part-LEFT_UPPER_ARM = 左上腕
 body_part-LEFT_LOWER_ARM = 左前腕
@@ -562,8 +562,6 @@ onboarding-done-close = ガイドを閉じる
 
 onboarding-connect_tracker-back = Wi-Fi認証に戻る
 onboarding-connect_tracker-title = 接続中のトラッカー
-onboarding-connect_tracker-description-p0 = さあ、楽しい部分に移りましょう。すべてのトラッカーを接続します！
-onboarding-connect_tracker-description-p1 = まだ接続されていないトラッカーたちをUSBポートを通して接続するだけです。
 onboarding-connect_tracker-issue-serial = 接続に問題があります！
 onboarding-connect_tracker-usb = USBトラッカー
 onboarding-connect_tracker-connection_status-none = トラッカーを探しています
@@ -711,3 +709,12 @@ status_system-StatusSteamVRDisconnected =
        *[other] SlimeVRドライバ経由でSteamVRに接続されていません
     }
 status_system-StatusTrackerError = { $trackerName } トラッカーにエラーが発生しています
+
+## Tray Menu
+
+
+## First exit modal
+
+
+## Unknown device modal
+
