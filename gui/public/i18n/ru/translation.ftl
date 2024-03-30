@@ -144,6 +144,10 @@ widget-imu_visualizer-rotation_raw = RAW
 widget-imu_visualizer-rotation_preview = Предпросмотр
 widget-imu_visualizer-rotation_hide = Скрыть
 
+## Widget: Skeleton Visualizer
+
+widget-skeleton_visualizer-hide = Скрыть
+
 ## Tracker status
 
 tracker-status-none = Без Статуса
@@ -152,6 +156,7 @@ tracker-status-error = Ошибка
 tracker-status-disconnected = Отключен
 tracker-status-occluded = Закрыт
 tracker-status-ok = ОК
+tracker-status-timed_out = Истекло время ожидания
 
 ## Tracker status columns
 
@@ -201,9 +206,9 @@ tracker-settings-assignment_section-edit = Изменить привязку
 tracker-settings-mounting_section = Положение крепления
 tracker-settings-mounting_section-description = Где прикреплен трекер?
 tracker-settings-mounting_section-edit = Изменить прикрепление
-tracker-settings-drift_compensation_section = Разрешить компенсацию дрифта
+tracker-settings-drift_compensation_section = Разрешить компенсацию дрейфа
 tracker-settings-drift_compensation_section-description = Должен ли этот трекер компенсировать свой дрифт?
-tracker-settings-drift_compensation_section-edit = Разрешить компенсацию дрифта
+tracker-settings-drift_compensation_section-edit = Разрешить компенсацию дрейфа
 # The .<name> means it's an attribute and it's related to the top key.
 # In this case that is the settings for the assignment section.
 tracker-settings-name_section = Имя трекера
@@ -274,15 +279,15 @@ mounting_selection_menu-close = Закрыть
 
 settings-sidebar-title = Настройки
 settings-sidebar-general = Общие
-settings-sidebar-tracker_mechanics = Механики трекеров
-settings-sidebar-fk_settings = Настройки трекеров
+settings-sidebar-tracker_mechanics = Механика трекеров
+settings-sidebar-fk_settings = Настройки отслеживания
 settings-sidebar-gesture_control = Настройки жестов
 settings-sidebar-interface = Интерфейс
 settings-sidebar-osc_router = OSC роутер
 settings-sidebar-osc_trackers = VRChat OSC Трекеры
 settings-sidebar-utils = Утилиты
 settings-sidebar-serial = Консоль
-settings-sidebar-appearance = Внешность
+settings-sidebar-appearance = Внешний вид
 settings-sidebar-notifications = Уведомление
 
 ## SteamVR settings
@@ -306,25 +311,25 @@ settings-general-steamvr-trackers-hands = Руки
 ## Tracker mechanics
 
 settings-general-tracker_mechanics = Механики трекеров
-settings-general-tracker_mechanics-filtering = Фильтр
+settings-general-tracker_mechanics-filtering = Фильтрация
 # This also cares about multilines
 settings-general-tracker_mechanics-filtering-description =
     Выберите тип фильтрации для ваших трекеров.
     Прогнозирование предсказывает движение, в то время как сглаживание сглаживает движение.
-settings-general-tracker_mechanics-filtering-type = Тип фильтра
-settings-general-tracker_mechanics-filtering-type-none = Нет фильтра
+settings-general-tracker_mechanics-filtering-type = Тип фильтрации
+settings-general-tracker_mechanics-filtering-type-none = Нет фильтрации
 settings-general-tracker_mechanics-filtering-type-none-description = Используется вращение как есть. Нет никакой фильтрации.
 settings-general-tracker_mechanics-filtering-type-smoothing = Сглаживание
 settings-general-tracker_mechanics-filtering-type-smoothing-description = Сглаживает движения, но добавляет некоторую задержку.
 settings-general-tracker_mechanics-filtering-type-prediction = Предсказывание
 settings-general-tracker_mechanics-filtering-type-prediction-description = Уменьшает задержку и делает движения более быстрыми, но может увеличить дрожание.
 settings-general-tracker_mechanics-filtering-amount = Количество
-settings-general-tracker_mechanics-drift_compensation = Компенсация дрифта
+settings-general-tracker_mechanics-drift_compensation = Компенсация дрейфа
 # This cares about multilines
 settings-general-tracker_mechanics-drift_compensation-description =
-    Компенсирует дрифт по рысканию IMU путем применения обратного вращения.
-    Измените размер компенсации и до скольких сбросов учитывается.
-settings-general-tracker_mechanics-drift_compensation-enabled-label = Компенсация дрифта
+    Компенсирует дрейф IMU по рысканию путем применения обратного вращения.
+    Измените количество компенсации и до скольких сбросов учитывается.
+settings-general-tracker_mechanics-drift_compensation-enabled-label = Компенсация дрейфа
 settings-general-tracker_mechanics-drift_compensation-amount-label = Кол-во компенсации
 settings-general-tracker_mechanics-drift_compensation-max_resets-label = Используйте до x последних сбросов
 
@@ -347,8 +352,8 @@ settings-general-fk_settings-leg_tweak-skating_correction-description = Сила
 settings-general-fk_settings-leg_tweak-floor_clip-description = Привязка к полу может уменьшить или даже полностью исключить прохождение через пол. При включении обязательно выполните полный сброс и повторную калибровку в игре.
 settings-general-fk_settings-leg_tweak-toe_snap-description = Toe-snap пытается угадать вращение ваших ступней, если трекеры для них не используются.
 settings-general-fk_settings-leg_tweak-foot_plant-description = Foot-Plant поворачивает ваши ступни так, чтобы они были параллельны земле при контакте.
-settings-general-fk_settings-leg_fk = Трекинг ноги
-settings-general-fk_settings-arm_fk = Трекинг руки
+settings-general-fk_settings-leg_fk = Отслеживание ног
+settings-general-fk_settings-arm_fk = Отслеживание рук
 settings-general-fk_settings-arm_fk-description = Измените способ отслеживания рук.
 settings-general-fk_settings-arm_fk-force_arms = Руки от HMD
 settings-general-fk_settings-skeleton_settings-toggles = Переключатели скелета
@@ -372,7 +377,7 @@ settings-general-fk_settings-vive_emulation-label = Включить эмуля�
 
 ## Gesture control settings (tracker tapping)
 
-settings-general-gesture_control = Контроль жестами
+settings-general-gesture_control = Управление жестами
 settings-general-gesture_control-subtitle = Сброс после нажатия
 settings-general-gesture_control-description = Позволяет запускать сброс настроек нажатием на трекер. Трекер, расположенный выше всего на вашем торсе, используется для быстрого сброса, трекер, расположенный выше всего на вашей левой ноге, используется для сброса, а трекер, расположенный выше всего на вашей правой ноге, используется для сброса установок. Следует отметить, что для регистрации нажатия должны происходить в течение 0,6 секунды.
 # This is a unit: 3 taps, 2 taps, 1 tap
@@ -408,7 +413,7 @@ settings-general-gesture_control-numberTrackersOverThreshold-description = Ув�
 
 ## Appearance settings
 
-settings-interface-appearance = Внешность
+settings-interface-appearance = Внешний вид
 settings-general-interface-dev_mode = Режим разработчика
 settings-general-interface-dev_mode-description = Этот режим может быть полезен, если вам нужны подробные данные или для взаимодействия с подключенными трекерами на более продвинутом уровне.
 settings-general-interface-dev_mode-label = Режим разработчика
@@ -435,6 +440,9 @@ settings-general-interface-feedback_sound = Звук обратной связи
 settings-general-interface-feedback_sound-description = Эта опция будет воспроизводить звук при срабатывании сброса.
 settings-general-interface-feedback_sound-label = Звук обратной связи
 settings-general-interface-feedback_sound-volume = Громкость реакции интерфейса на косание треккера
+settings-general-interface-use_tray = Свернуть в системный трей
+settings-general-interface-use_tray-description = Позволяет закрыть окно, не закрывая сервер SlimeVR, так что вы можете продолжать использовать его, не беспокоясь о графическом интерфейсе.
+settings-general-interface-use_tray-label = Свернуть в системный трей
 
 ## Serial settings
 
@@ -621,8 +629,6 @@ onboarding-done-close = Закрыть гид
 
 onboarding-connect_tracker-back = Вернуться к учетным данным Wi-Fi
 onboarding-connect_tracker-title = Подключить трекеры
-onboarding-connect_tracker-description-p0 = Теперь самое интересное - подключение всех трекеров!
-onboarding-connect_tracker-description-p1 = Просто подключите все, что еще не подключены, через USB-порт.
 onboarding-connect_tracker-issue-serial = У меня проблемы с подключением!
 onboarding-connect_tracker-usb = USB Трекер
 onboarding-connect_tracker-connection_status-none = Поиск трекеров
@@ -651,7 +657,7 @@ onboarding-connect_tracker-next = Я подключил все трекеры!
 ## Tracker calibration tutorial
 
 onboarding-calibration_tutorial = Учебное пособие по калибровке IMU
-onboarding-calibration_tutorial-subtitle = Это поможет уменьшить дрифт трекера!
+onboarding-calibration_tutorial-subtitle = Это поможет уменьшить дрейф трекера!
 onboarding-calibration_tutorial-description = Каждый раз, когда вы включаете трекеры, они должны на мгновение отдохнуть на плоской поверхности для калибровки. Давайте сделаем то же самое, нажав кнопку «{ onboarding-calibration_tutorial-calibrate }», <b>не перемещайте их!</b>
 onboarding-calibration_tutorial-calibrate = Я положил свои трекеры на стол
 onboarding-calibration_tutorial-status-waiting = Ждем вас
@@ -768,6 +774,8 @@ onboarding-choose_mounting-manual_mounting = Ручная привязка
 # Italized text
 onboarding-choose_mounting-manual_mounting-label = Рекомендованный
 onboarding-choose_mounting-manual_mounting-description = Это позволит вам выбрать направление монтажа вручную для каждого трекера
+onboarding-choose_mounting-manual_modal-confirm = Я уверен в том, что делаю
+onboarding-choose_mounting-manual_modal-cancel = Отмена
 
 ## Tracker manual mounting setup
 
@@ -801,17 +809,9 @@ onboarding-automatic_mounting-put_trackers_on-next = Я включил и над
 ## Tracker proportions method choose
 
 onboarding-choose_proportions = Какой метод калибровки пропорций использовать?
-# Multiline string
-onboarding-choose_proportions-description =
-    Пропорции тела используются для определения размеров вашего тела. Они необходимы для расчета местоположения трекеров.
-    Если пропорции вашего тела не соответствуют сохраненным, точность отслеживания будет хуже, и вы заметите такие вещи, как катание на коньках или скольжение, или ваше тело не совсем соответствует вашему аватару.
 onboarding-choose_proportions-auto_proportions = Автоматическая привязка
 # Italized text
 onboarding-choose_proportions-auto_proportions-subtitle = Рекомендуется
-onboarding-choose_proportions-auto_proportions-descriptionv2 =
-    Приложение попытаеться угадать ваши пропорции, записывая образец ваших движений и пропуская его через алгоритм.
-    
-    <b>Для этого необходимо, чтобы ваш HMD был подключен к SlimeVR!</b>
 onboarding-choose_proportions-manual_proportions = Ручные пропорции
 # Italized text
 onboarding-choose_proportions-manual_proportions-subtitle = Для небольших штрихов
@@ -841,14 +841,6 @@ onboarding-automatic_proportions-put_trackers_on-title = Наденьте ваш
 onboarding-automatic_proportions-put_trackers_on-description = Чтобы откалибровать ваши пропорции, мы собираемся использовать трекеры, которые вы только что назначили. Включите все свои трекеры, вы можете увидеть, какие из них какие на рисунке справа.
 onboarding-automatic_proportions-put_trackers_on-next = Я надел все свои трекеры
 onboarding-automatic_proportions-requirements-title = Требования
-# Each line of text is a different list item
-onboarding-automatic_proportions-requirements-description =
-    У вас есть как минимум достаточно трекеров, чтобы отслеживать ваши ноги (обычно 5 трекеров).
-    У вас есть трекеры и гарнитура.
-    Вы носите трекеры и гарнитуру.
-    Ваши трекеры и гарнитура подключены к серверу SlimeVR.
-    Ваши трекеры и гарнитура правильно работают на сервере SlimeVR.
-    Ваша гарнитура передает данные о местоположении на сервер SlimeVR (обычно это означает, что SteamVR запущен и подключен к SlimeVR с помощью драйвера SlimeVR SteamVR).
 onboarding-automatic_proportions-requirements-next = Я прочитал требования
 onboarding-automatic_proportions-check_height-title = Проверьте ваш рост
 onboarding-automatic_proportions-check_height-description = Мы используем ваш рост в качестве основы для наших измерений, используя высоту HMD как приблизительное значение к вашему фактическому росту, но лучше проверить, верны ли эти значения самому!
@@ -902,6 +894,9 @@ onboarding-automatic_proportions-error_modal-confirm = Принято!
 
 home-no_trackers = Трекеры не обнаружены и не привязаны
 
+## Trackers Still On notification
+
+
 ## Status system
 
 status_system-StatusTrackerReset = Рекомендуется выполнить полный сброс, так как один или несколько трекеров не настроены.
@@ -911,3 +906,12 @@ status_system-StatusSteamVRDisconnected =
        *[other] В настоящее время не подключен к SteamVR через драйвер SlimeVR.
     }
 status_system-StatusTrackerError = В трекере { $trackerName } обнаружена ошибка.
+
+## Tray Menu
+
+
+## First exit modal
+
+
+## Unknown device modal
+
