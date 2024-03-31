@@ -23,6 +23,7 @@ tips-find_tracker = Nie wiesz który tracker to który? Obracaj Trackerem , podc
 tips-do_not_move_heels = Upewnij się aby pięty pozostały w bezruchu podczas nagrywania.
 tips-file_select = Przeciągnij i upuść pliki, których chcesz użyć, lub <u>przeglądaj</u>.
 tips-tap_setup = Możesz powoli stuknąć 2 razy tracker, aby go wybrać, zamiast wybierać go z menu.
+tips-failed_webgl = Nie udało się zainicjalizować WebGL.
 
 ## Body parts
 
@@ -311,6 +312,7 @@ settings-general-steamvr-trackers-feet = Stopy
 settings-general-steamvr-trackers-knees = Kolana
 settings-general-steamvr-trackers-elbows = Łokcie
 settings-general-steamvr-trackers-hands = Ręce
+settings-general-steamvr-trackers-hands-warning-cancel = Anuluj
 
 ## Tracker mechanics
 
