@@ -23,6 +23,8 @@ tips-find_tracker = لست متأكد من أجهزة التعقب؟ قم بتح
 tips-do_not_move_heels = يرجى عدم تحريك كاحليك أثناء التسجيل!
 tips-file_select = اسحب الملفات وأفلتها لاستخدامها أو <u> تصفح </ u>
 tips-tap_setup = يمكنك النقر ببطء مرتين على جهاز التعقب لاختياره بدلاً من تحديده من القائمة.
+tips-turn_on_tracker = هل تستخدم أجهزة تعقب SlimeVR الرسمية؟ تذكر  <b><em> أن تشغل أجهزة التعقب </em></b> بعد توصيلها بالكمبيوتر!
+tips-failed_webgl = فشل تهيئة WebGL.
 
 ## Body parts
 
@@ -196,6 +198,7 @@ tracker-infos-hardware_rev = مراجعة الأجهزة
 tracker-infos-hardware_identifier = معرف الجهاز
 tracker-infos-imu = مستشعر IMU
 tracker-infos-board_type = اللوحة الرئيسية
+tracker-infos-network_version = نسخة البروتوكول
 
 ## Tracker settings
 
@@ -308,6 +311,8 @@ settings-general-steamvr-trackers-feet = القدمين
 settings-general-steamvr-trackers-knees = الركبتين
 settings-general-steamvr-trackers-elbows = الكوعين
 settings-general-steamvr-trackers-hands = اليدين
+settings-general-steamvr-trackers-hands-warning-cancel = إلغاء
+settings-general-steamvr-trackers-hands-warning-done = نعم
 
 ## Tracker mechanics
 
@@ -646,8 +651,6 @@ onboarding-done-close = إغلاق الدليل
 
 onboarding-connect_tracker-back = العودة إلى بيانات اعتماد الواي فاي
 onboarding-connect_tracker-title = ربط أجهزة التعقب
-onboarding-connect_tracker-description-p0 = ننتقل الآن إلى الجزء الممتع ، ربط جميع أجهزة التعقب!
-onboarding-connect_tracker-description-p1 = ما عليك سوى توصيل كل ما لم يتم توصيله بعد من خلال منفذ يو أس بي.
 onboarding-connect_tracker-issue-serial = أواجه مشكلة في الاتصال!
 onboarding-connect_tracker-usb = جهاز تعقب يو أس بي
 onboarding-connect_tracker-connection_status-none = نبحث عن أجهزة التعقب
@@ -962,4 +965,10 @@ tray_menu-quit = انهاء
 
 ## First exit modal
 
+tray_or_exit_modal-submit = احفظ
 tray_or_exit_modal-cancel = إلغاء
+
+## Unknown device modal
+
+unknown_device-modal-confirm = أكيد
+unknown_device-modal-forget = تجاهلها
