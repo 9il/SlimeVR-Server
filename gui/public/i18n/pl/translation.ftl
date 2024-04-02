@@ -19,8 +19,8 @@ version_update-close = Zamknij
 
 ## Tips
 
-tips-find_tracker = Nie wiesz który tracker to który? Obracaj Trackerem , podczas obracania będzie sie on podświetlał w serwerze.
-tips-do_not_move_heels = Upewnij się aby pięty pozostały w bezruchu podczas nagrywania.
+tips-find_tracker = Nie wiesz który tracker to który? Poruszaj trackerem, a będzie sie on podświetlał na serwerze.
+tips-do_not_move_heels = Upewnij się, aby pięty pozostały w bezruchu podczas nagrywania.
 tips-file_select = Przeciągnij i upuść pliki, których chcesz użyć, lub <u>przeglądaj</u>.
 tips-tap_setup = Możesz powoli stuknąć 2 razy tracker, aby go wybrać, zamiast wybierać go z menu.
 tips-failed_webgl = Nie udało się zainicjalizować WebGL.
@@ -197,6 +197,7 @@ tracker-infos-hardware_rev = Wersja Sprzętu
 tracker-infos-hardware_identifier = Identyfikator sprzętu
 tracker-infos-imu = Czujnik IMU
 tracker-infos-board_type = Płyta główna
+tracker-infos-network_version = Wersja protokołu
 
 ## Tracker settings
 
@@ -328,7 +329,7 @@ settings-general-tracker_mechanics-filtering-type-none-description = Używa rota
 settings-general-tracker_mechanics-filtering-type-smoothing = Wygładzanie
 settings-general-tracker_mechanics-filtering-type-smoothing-description = Wygładza ruchy lecz dodaje trochę opóźnienia.
 settings-general-tracker_mechanics-filtering-type-prediction = Przewidywanie
-settings-general-tracker_mechanics-filtering-type-prediction-description = Zmniejsza opóźnienie i robi ruchy trochę ostrzejszymi, ale może dodać trochę drgań.
+settings-general-tracker_mechanics-filtering-type-prediction-description = Zmniejsza opóźnienie i zwiększa dynamikę ruchów, ale może dodać trochę drgań.
 settings-general-tracker_mechanics-filtering-amount = Ilość
 settings-general-tracker_mechanics-drift_compensation = Kompensacja dryfu
 # This cares about multilines
@@ -353,7 +354,7 @@ settings-general-fk_settings-leg_tweak-floor_clip = Klip podłogowy
 settings-general-fk_settings-leg_tweak-skating_correction = Korekta jazdy na łyżwach
 settings-general-fk_settings-leg_tweak-toe_snap = Pstryknięcie palcem
 settings-general-fk_settings-leg_tweak-foot_plant = Korekta stopy
-settings-general-fk_settings-leg_tweak-skating_correction-amount = Skating correction strength
+settings-general-fk_settings-leg_tweak-skating_correction-amount = Siła korekcji efektu jazdy na łyżwach
 settings-general-fk_settings-leg_tweak-skating_correction-description = Korekta jazdy na łyżwach koryguje jazdę na łyżwach, ale może zmniejszyć dokładność niektórych wzorców ruchu. Włączając tę opcję, pamiętaj o pełnym zresetowaniu i ponownej kalibracji w grze.
 settings-general-fk_settings-leg_tweak-floor_clip-description = Floor-clip może zmniejszyć lub nawet wyeliminować przecinanie podłogi. Włączając tę opcję, pamiętaj o pełnym zresetowaniu i ponownej kalibracji w grze.
 settings-general-fk_settings-leg_tweak-toe_snap-description = Toe-snap próbuje odgadnąć obrót twoich stóp, jeśli trackery stóp nie są używane.
@@ -368,7 +369,7 @@ settings-general-fk_settings-arm_fk-reset_mode-description = Zmień pozycję ram
 settings-general-fk_settings-arm_fk-back = Wstecz
 settings-general-fk_settings-arm_fk-back-description = Tryb domyślny, w którym górne ramiona cofają się, a dolne ramiona przesuwają się do przodu.
 settings-general-fk_settings-arm_fk-tpose_up = T-pose (w górę)
-settings-general-fk_settings-arm_fk-tpose_up-description = Oczekuje, że podczas pełnego resetu twoje ramiona będą opuszczone na boki w 90 stopni w górę podczas resetu montażowego.
+settings-general-fk_settings-arm_fk-tpose_up-description = Oczekuje, że twoje ręcę będą opuszczone podczas pelnego resetu i wystawione pod kątem 90 stopni na boki podczas resetu montażu.
 settings-general-fk_settings-arm_fk-tpose_down = T-pose (w dół)
 settings-general-fk_settings-arm_fk-tpose_down-description = Oczekuje, że Twoje ramiona będą ustawione pod kątem w 90 stopni na boki podczas Pełnego Resetu i w dół po bokach podczas Resetu Montażowego.
 settings-general-fk_settings-arm_fk-forward = Do przodu
@@ -427,7 +428,7 @@ settings-general-gesture_control-mountingResetDelay = Opóźnienie resetowania p
 settings-general-gesture_control-mountingResetTaps = Stuknięcie do resetowania położenia
 # The number of trackers that can have higher acceleration before a tap is rejected
 settings-general-gesture_control-numberTrackersOverThreshold = Trackery ponad progiem
-settings-general-gesture_control-numberTrackersOverThreshold-description = Zwiększ tę wartość, jeśli wykrywanie dotknięcia nie działa. Nie zwiększaj go ponad to, co jest potrzebne, aby wykrywanie dotknięcia działało, ponieważ spowoduje to fałszywe alarmy
+settings-general-gesture_control-numberTrackersOverThreshold-description = Zwiększ tę wartość, jeśli wykrywanie stukniecia nie działa. Nie zwiększaj go ponad to, co konieczne, ponieważ wygeneruje to fałszywe stuknięcia.
 
 ## Appearance settings
 
@@ -452,15 +453,17 @@ settings-interface-appearance-font_size-description = Wpływa to na rozmiar czci
 
 settings-interface-notifications = Powiadomienia
 settings-general-interface-serial_detection = Wykrywanie urządzeń
-settings-general-interface-serial_detection-description = Ta opcja daje powiadomienia jeżeli serwer wykryje urządzenie które może być trackerem
+settings-general-interface-serial_detection-description = Ta opcja otworzy okienko, jeżeli serwer wykryje podłaczenie urządzenia, które może być trackerem.
 settings-general-interface-serial_detection-label = Wykrywanie urządzeń
-settings-general-interface-feedback_sound = Dźwięk Informacji
+settings-general-interface-feedback_sound = Dźwięk zwrotny
 settings-general-interface-feedback_sound-description = Ta opcja odtworzy dźwięk, gdy reset zostanie uruchomiony
 settings-general-interface-feedback_sound-label = Dźwięk Informacji
 settings-general-interface-feedback_sound-volume = Poziom głośności sprzężenia zwrotnego
 settings-general-interface-connected_trackers_warning = Ostrzeżenie o podłączonych trackerach
 settings-general-interface-connected_trackers_warning-description = Ta opcja wyświetli wyskakujące okienko za każdym razem, gdy spróbujesz wyjść ze SlimeVR, mając jeden lub więcej podłączonych trackerów. Przypomina o wyłączeniu trackerów, gdy skończysz, aby wydłużyć żywotność baterii.
 settings-general-interface-connected_trackers_warning-label = Ostrzeżenie o podłączonych trackerach przy wyjściu
+settings-general-interface-use_tray = Minimalizuj do zasobnika systemowego
+settings-general-interface-use_tray-description = Pozwala zamknąć okno bez wyłączania serwera SlimeVR, aby używać trackerów bez interfejsu graficznego.
 
 ## Serial settings
 
@@ -628,7 +631,7 @@ onboarding-reset_tutorial-2 =
 ## Setup start
 
 onboarding-home = Witamy w SlimeVR
-onboarding-home-start = Zaczynajmny!
+onboarding-home-start = Zaczynajmy!
 
 ## Enter VR part of setup
 
@@ -647,6 +650,7 @@ onboarding-done-close = Zamknij Poradnik
 
 onboarding-connect_tracker-back = Cofnij się do ustawień Wi-Fi
 onboarding-connect_tracker-title = Połącz trackery
+onboarding-connect_tracker-description-p0-v1 = A teraz czas na najfajniejszą część: łączenie trackerów!
 onboarding-connect_tracker-issue-serial = Mam problemy z połączeniem!
 onboarding-connect_tracker-usb = USB Tracker
 onboarding-connect_tracker-connection_status-none = Szukanie Trackerów
@@ -710,6 +714,7 @@ onboarding-assign_trackers-assigned =
     }
 onboarding-assign_trackers-advanced = Pokaż zaawansowane ustawienia pozycji
 onboarding-assign_trackers-next = Przydzieliłem już wszystkie trackery
+onboarding-assign_trackers-mirror_view = Widok lustrzany
 
 ## Tracker assignment warnings
 
@@ -832,9 +837,18 @@ onboarding-automatic_mounting-put_trackers_on-next = Mam wszystkie trackery zał
 ## Tracker proportions method choose
 
 onboarding-choose_proportions = Jakiej metody kalibracji proporcji użyć?
+# Multiline string
+onboarding-choose_proportions-description-v1 =
+    Proporcje ciała służą do określenia wymiarów Twojego ciała. Są niezbędne do obliczenia właściwej pozycji trackerów.¶
+    Gdy proporcje Twojego ciała nie będą odpowiadać zapisanym, Twoja precyzja śledzenia będzie gorsza i zauważysz takie problemy jak niedopasowanie awatara do Twojego ciała, efekt jazdy na łyżwach i ślizgania się.¶
+    <b>Wystarczy zmierzyć swoje ciało tylko raz!</b> O ile proporcje są poprawne i Twoje ciało się nie zmieniło, nie musisz powtarzać żadnych pomiarów.
 onboarding-choose_proportions-auto_proportions = Proporcje automatyczne
 # Italized text
 onboarding-choose_proportions-auto_proportions-subtitle = Zalecana
+onboarding-choose_proportions-auto_proportions-descriptionv3 =
+    Spowoduje to estymację Twoich proporcji poprzez zarejestrowanie nagrania Twoich ruchów i przetworzenie ich przez algorytm.¶
+    ¶
+    <b>Wymaga to podłączenia headsetu (HMD) do SlimeVR i założenia go na głowę!</b>
 onboarding-choose_proportions-manual_proportions = Ręczne proporcje
 # Italized text
 onboarding-choose_proportions-manual_proportions-subtitle = Drobne detale
@@ -864,6 +878,13 @@ onboarding-automatic_proportions-put_trackers_on-title = Załóż trackery
 onboarding-automatic_proportions-put_trackers_on-description = Aby skalibrować proporcje, użyjemy trackerów które przed chwilą przypisałeś. Załóż wszystkie trackery, będziesz widział który to który na postaci po prawej.
 onboarding-automatic_proportions-put_trackers_on-next = Mam wszystkie trackery założone
 onboarding-automatic_proportions-requirements-title = Wymagania
+# Each line of text is a different list item
+onboarding-automatic_proportions-requirements-descriptionv2 =
+    Masz wystarczającą liczbę trackerów, aby śledzić swoje stopy (zwykle 5 trackerów).¶
+    Masz włączone i założone trackery oraz headset.¶
+    Twoje trackery i heaset są połączone z serwerem SlimeVR i działają poprawnie (np. nie ma przycięć, rozłączeń itp.).¶
+    Twój headset raportuje dane o pozycji do serwera SlimeVR (zazwyczaj oznacza to, że SteamVR jest uruchomiony i podłączony do SlimeVR za pomocą sterownika SteamVR SlimeVR).¶
+    Twoje śledzenie działa i dokładnie odzwierciedla Twoje ruchy (wykonałeś pełny reset i poruszają się we właściwym kierunku podczas kopania, schylania się, siedzenia itp.).
 onboarding-automatic_proportions-requirements-next = Zapoznałem się z wymaganiami
 onboarding-automatic_proportions-check_height-title = Sprawdź swój wzrost
 onboarding-automatic_proportions-check_height-description = Używamy Twojego wzrostu jako podstawy naszych pomiarów, używając wzrostu HMD jako przybliżenia Twojego rzeczywistego wzrostu, ale lepiej samemu sprawdzić, czy są prawidłowe!
@@ -938,9 +959,27 @@ status_system-StatusTrackerError = Moduł śledzący { $trackerName } ma błąd.
 
 ## Tray Menu
 
+tray_menu-show = Pokaż
+tray_menu-hide = Ukryj
 
 ## First exit modal
 
+tray_or_exit_modal-title = Co powinien robić przycisk zamykania?
+# Multiline text
+tray_or_exit_modal-description =
+    Dzięki temu możesz wybrać, czy chcesz opuścić serwer, czy zminimalizować go do zasobnika po naciśnięciu przycisku zamykania.¶
+    ¶
+    Możesz to później zmienić w ustawieniach interfejsu!
+tray_or_exit_modal-radio-exit = Wyjdź po zamknięciu
+tray_or_exit_modal-radio-tray = Minimalizuj do zasobnika systemowego
+tray_or_exit_modal-submit = Zachowaj
+tray_or_exit_modal-cancel = Anuluj
 
 ## Unknown device modal
 
+unknown_device-modal-title = Znaleziono nowy tracker!
+unknown_device-modal-description =
+    Dostępny jest nowy tracker z adresem MAC b { $deviceId } /b .¶
+    Czy chcesz podłączyć go do SlimeVR?
+unknown_device-modal-confirm = Jasne!
+unknown_device-modal-forget = Ignoruj
