@@ -198,6 +198,7 @@ tracker-infos-hardware_rev = Révision du hardware
 tracker-infos-hardware_identifier = ID Matériel
 tracker-infos-imu = Capteur IMU
 tracker-infos-board_type = Carte principale
+tracker-infos-network_version = Version du protocole
 
 ## Tracker settings
 
@@ -313,6 +314,14 @@ settings-general-steamvr-trackers-feet = Pieds
 settings-general-steamvr-trackers-knees = Genoux
 settings-general-steamvr-trackers-elbows = Coudes
 settings-general-steamvr-trackers-hands = Mains
+settings-general-steamvr-trackers-tracker_toggling = Assignation automatique des capteurs
+settings-general-steamvr-trackers-tracker_toggling-description = Gère automatiquement l’activation ou la désactivation des capteurs SteamVR en fonction de vos capteurs actuellement affectés
+settings-general-steamvr-trackers-tracker_toggling-label = Assignation automatique des capteurs
+settings-general-steamvr-trackers-hands-warning =
+    <b>Attention :</b> les capteurs de mains remplaceront vos manettes.
+    Êtes-vous sûr?
+settings-general-steamvr-trackers-hands-warning-cancel = Annuler
+settings-general-steamvr-trackers-hands-warning-done = Oui
 
 ## Tracker mechanics
 
@@ -330,6 +339,7 @@ settings-general-tracker_mechanics-filtering-type-smoothing-description = Fluidi
 settings-general-tracker_mechanics-filtering-type-prediction = Prédiction
 settings-general-tracker_mechanics-filtering-type-prediction-description = Réduit la latence et rend les mouvements plus vifs, mais moins fluides.
 settings-general-tracker_mechanics-filtering-amount = Intensité du filtrage
+settings-general-tracker_mechanics-yaw-reset-smooth-time = Temps de fluidification de la réinitialisation horizontale (0s désactive la fluidification)
 settings-general-tracker_mechanics-drift_compensation = Compensation de la dérive
 # This cares about multilines
 settings-general-tracker_mechanics-drift_compensation-description =
@@ -338,6 +348,8 @@ settings-general-tracker_mechanics-drift_compensation-description =
 settings-general-tracker_mechanics-drift_compensation-enabled-label = Compensation de la dérive
 settings-general-tracker_mechanics-drift_compensation-amount-label = Force de la compensation
 settings-general-tracker_mechanics-drift_compensation-max_resets-label = Nombre de réinitialisations prises en compte
+settings-general-tracker_mechanics-save_mounting_reset = Enregistrer la calibration de la réinitialisation automatique de l'alignement
+settings-general-tracker_mechanics-save_mounting_reset-enabled-label = Enregistrer la réinitialisation de l'alignement
 
 ## FK/Tracking settings
 
@@ -647,8 +659,7 @@ onboarding-done-close = Fermer le guide
 
 onboarding-connect_tracker-back = Revenir aux informations d'identification Wi-Fi
 onboarding-connect_tracker-title = Connecter les capteurs
-onboarding-connect_tracker-description-p0 = Passons maintenant à la partie amusante: connecter tous les capteurs !
-onboarding-connect_tracker-description-p1 = Connectez chaque capteur qui n'est pas encore connecté via un port USB.
+onboarding-connect_tracker-description-p0-v1 = Passons maintenant à la partie amusante, connecter les capteurs!
 onboarding-connect_tracker-issue-serial = J'ai des problèmes de connexion !
 onboarding-connect_tracker-usb = Capteur USB
 onboarding-connect_tracker-connection_status-none = Recherche de capteurs
