@@ -348,6 +348,11 @@ settings-general-tracker_mechanics-drift_compensation-description =
 settings-general-tracker_mechanics-drift_compensation-enabled-label = 漂移补偿
 settings-general-tracker_mechanics-drift_compensation-amount-label = 补偿量
 settings-general-tracker_mechanics-drift_compensation-max_resets-label = 使用几次的重置结果？
+settings-general-tracker_mechanics-save_mounting_reset = 保存佩戴重置结果
+settings-general-tracker_mechanics-save_mounting_reset-description =
+    在SlimeVR服务器关闭时保留追踪器自动佩戴重置结果。适用于一体式动捕服等
+    追踪器佩戴位置保持不变的场景。<b>不建议普通用户使用！</b>
+settings-general-tracker_mechanics-save_mounting_reset-enabled-label = 保存佩戴重置
 
 ## FK/Tracking settings
 
