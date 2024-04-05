@@ -349,6 +349,9 @@ settings-general-tracker_mechanics-drift_compensation-enabled-label = Compensati
 settings-general-tracker_mechanics-drift_compensation-amount-label = Force de la compensation
 settings-general-tracker_mechanics-drift_compensation-max_resets-label = Nombre de réinitialisations prises en compte
 settings-general-tracker_mechanics-save_mounting_reset = Enregistrer la calibration de la réinitialisation automatique de l'alignement
+settings-general-tracker_mechanics-save_mounting_reset-description =
+    Enregistre les calibrations des réinitialisation automatiques d'alignement pour les capteurs entre les redémarrages.
+    Utile lorsque vous portez une combinaison où les capteurs ne bougent pas entre les sessions. <b>Non recommandé pour les utilisateurs normaux !</b>
 settings-general-tracker_mechanics-save_mounting_reset-enabled-label = Enregistrer la réinitialisation de l'alignement
 
 ## FK/Tracking settings
@@ -660,6 +663,7 @@ onboarding-done-close = Fermer le guide
 onboarding-connect_tracker-back = Revenir aux informations d'identification Wi-Fi
 onboarding-connect_tracker-title = Connecter les capteurs
 onboarding-connect_tracker-description-p0-v1 = Passons maintenant à la partie amusante, connecter les capteurs!
+onboarding-connect_tracker-description-p1-v1 = Connectez chaque capteur un par un via un port USB.
 onboarding-connect_tracker-issue-serial = J'ai des problèmes de connexion !
 onboarding-connect_tracker-usb = Capteur USB
 onboarding-connect_tracker-connection_status-none = Recherche de capteurs
@@ -895,6 +899,9 @@ onboarding-automatic_proportions-check_height-title = Vérifiez votre taille
 onboarding-automatic_proportions-check_height-description = Nous utilisons votre taille comme la base de nos mesures en utilisant la hauteur de votre casque comme approximation de votre taille réelle, mais il est préférable de vérifier si elles sont correctes vous-même !
 # All the text is in bold!
 onboarding-automatic_proportions-check_height-calculation_warning = Veuillez appuyer sur le bouton en vous <u>tenant debout</u> pour calculer votre taille. Vous avez un délais de 3 secondes après avoir appuyé sur le bouton !
+onboarding-automatic_proportions-check_height-guardian_tip =
+    Si vous utilisez un casque VR sans-fil, assurez-vous d’avoir votre guardien/
+    limite activée pour que votre hauteur soit correcte !
 onboarding-automatic_proportions-check_height-fetch_height = Je suis debout !
 # Context is that the height is unknown
 onboarding-automatic_proportions-check_height-unknown = Inconnu
