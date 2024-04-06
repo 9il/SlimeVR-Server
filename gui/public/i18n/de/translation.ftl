@@ -196,6 +196,7 @@ tracker-infos-hardware_rev = Hardware-Version
 tracker-infos-hardware_identifier = Hardware-ID
 tracker-infos-imu = IMU-Sensor
 tracker-infos-board_type = Platine
+tracker-infos-network_version = Protokoll Version
 
 ## Tracker settings
 
@@ -633,8 +634,6 @@ onboarding-done-close = Einrichtung schließen
 
 onboarding-connect_tracker-back = Zurück zu WLAN-Zugangsdaten
 onboarding-connect_tracker-title = Verbinde Tracker
-onboarding-connect_tracker-description-p0 = Nun zum unterhaltsamen Teil, verbinde alle Tracker!
-onboarding-connect_tracker-description-p1 = Verbinden Sie einfach alle Tracker, die noch nicht verbunden sind, über einen USB-Anschluss.
 onboarding-connect_tracker-issue-serial = Ich habe Schwierigkeiten die Tracker zu verbinden!
 onboarding-connect_tracker-usb = USB Tracker
 onboarding-connect_tracker-connection_status-none = Suche nach Trackern
@@ -816,10 +815,6 @@ onboarding-automatic_mounting-put_trackers_on-next = Ich habe alle meine Tracker
 ## Tracker proportions method choose
 
 onboarding-choose_proportions = Welche Kalibrierungsmethode ist zu verwenden?
-# Multiline string
-onboarding-choose_proportions-description =
-    Die Körperproportionen werden benutzt um die Maße Ihres Körpers zu kennen. Diese werden benötigt um die Positionen der Tracker zu berechnen.
-    Wenn die Körperproportionen nicht mit denen Ihres Körpers übereinstimmen, wird die Tracking-Präzision schlechter sein und Sie werden ein rutschen/gleiten der Fuß-Tracker feststellen oder die Bewegungen des Avatars stimmen nicht gut mit denen von Ihnen überein.
 onboarding-choose_proportions-auto_proportions = Automatische Proportionen
 # Italized text
 onboarding-choose_proportions-auto_proportions-subtitle = Empfohlen
@@ -932,3 +927,12 @@ status_system-StatusSteamVRDisconnected =
        *[other] Derzeit nicht über den SlimeVR-Treiber mit SteamVR verbunden.
     }
 status_system-StatusTrackerError = Der Tracker "{ $trackerName }" weist einen Fehler auf.
+
+## Tray Menu
+
+
+## First exit modal
+
+
+## Unknown device modal
+
