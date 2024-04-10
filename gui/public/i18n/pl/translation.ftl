@@ -23,6 +23,7 @@ tips-find_tracker = Nie wiesz który tracker to który? Poruszaj trackerem, a b�
 tips-do_not_move_heels = Upewnij się, aby pięty pozostały w bezruchu podczas nagrywania.
 tips-file_select = Przeciągnij i upuść pliki, których chcesz użyć, lub <u>przeglądaj</u>.
 tips-tap_setup = Możesz powoli stuknąć 2 razy tracker, aby go wybrać, zamiast wybierać go z menu.
+tips-turn_on_tracker = Używasz oficjalnych trackerów SlimeVR? Pamiętaj, <b><em>aby włączyć tracker</em></b> po podłączeniu go do komputera!
 tips-failed_webgl = Nie udało się zainicjalizować WebGL.
 
 ## Body parts
@@ -309,11 +310,17 @@ settings-general-steamvr-description =
     Przydatne jeżeli chcesz więcej kontroli nad SlimeVR.
 settings-general-steamvr-trackers-waist = Talia
 settings-general-steamvr-trackers-chest = Klatka Piersiowa
-settings-general-steamvr-trackers-feet = Stopy
-settings-general-steamvr-trackers-knees = Kolana
-settings-general-steamvr-trackers-elbows = Łokcie
-settings-general-steamvr-trackers-hands = Ręce
+settings-general-steamvr-trackers-left_foot = Lewa stopa
+settings-general-steamvr-trackers-right_foot = Prawa stopa
+settings-general-steamvr-trackers-left_knee = Lewe kolano
+settings-general-steamvr-trackers-right_knee = Prawe kolano
+settings-general-steamvr-trackers-left_elbow = Lewy łokieć
+settings-general-steamvr-trackers-right_elbow = Prawy łokieć
+settings-general-steamvr-trackers-left_hand = Lewa dłoń
+settings-general-steamvr-trackers-right_hand = Prawa dłoń
+settings-general-steamvr-trackers-tracker_toggling-description = Automatycznie obsługuje włączanie i wyłączanie wirtualnych trackerów SteamVR w zależności od bieżących przypisań fizycznych trackerów
 settings-general-steamvr-trackers-hands-warning-cancel = Anuluj
+settings-general-steamvr-trackers-hands-warning-done = Tak
 
 ## Tracker mechanics
 
@@ -485,6 +492,7 @@ settings-serial-factory_reset-warning-cancel = Anuluj
 settings-serial-get_infos = Uzyskaj informacje
 settings-serial-serial_select = Wybierz port szeregowy
 settings-serial-auto_dropdown_item = Auto
+settings-serial-get_wifi_scan = Skanuj sieci WiFi
 
 ## OSC router settings
 
@@ -651,6 +659,7 @@ onboarding-done-close = Zamknij Poradnik
 onboarding-connect_tracker-back = Cofnij się do ustawień Wi-Fi
 onboarding-connect_tracker-title = Połącz trackery
 onboarding-connect_tracker-description-p0-v1 = A teraz czas na najfajniejszą część: łączenie trackerów!
+onboarding-connect_tracker-description-p1-v1 = Podłącz każdy tracker pojedynczo przez port USB.
 onboarding-connect_tracker-issue-serial = Mam problemy z połączeniem!
 onboarding-connect_tracker-usb = USB Tracker
 onboarding-connect_tracker-connection_status-none = Szukanie Trackerów
