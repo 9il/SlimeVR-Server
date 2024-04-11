@@ -28,66 +28,66 @@ tips-failed_webgl = Nie udało się zainicjalizować WebGL.
 
 ## Body parts
 
-body_part-NONE = Nie Przypisano
+body_part-NONE = Nieprzypisany
 body_part-HEAD = Głowa
 body_part-NECK = Szyja
-body_part-RIGHT_SHOULDER = Prawe Ramie
-body_part-RIGHT_UPPER_ARM = Prawy Biceps
-body_part-RIGHT_LOWER_ARM = Prawe PrzedRamie
-body_part-RIGHT_HAND = Prawa Dłoń
-body_part-RIGHT_UPPER_LEG = Prawe Udo
-body_part-RIGHT_LOWER_LEG = Prawe Podudzie
-body_part-RIGHT_FOOT = Prawa Stopa
+body_part-RIGHT_SHOULDER = Prawe ramię
+body_part-RIGHT_UPPER_ARM = Prawy biceps
+body_part-RIGHT_LOWER_ARM = Prawe przedramię
+body_part-RIGHT_HAND = Prawa dłoń
+body_part-RIGHT_UPPER_LEG = Prawe udo
+body_part-RIGHT_LOWER_LEG = Prawa kostka
+body_part-RIGHT_FOOT = Prawa stopa
 body_part-UPPER_CHEST = Górna część klatki piersiowej
-body_part-CHEST = Klatka Piersiowa
+body_part-CHEST = Klatka piersiowa
 body_part-WAIST = Talia
 body_part-HIP = Biodra
-body_part-LEFT_SHOULDER = Lewe Ramie
-body_part-LEFT_UPPER_ARM = Lewy Biceps
-body_part-LEFT_LOWER_ARM = Lewe PrzedRamie
-body_part-LEFT_HAND = Lewa Dłoń
-body_part-LEFT_UPPER_LEG = Lewe Udo
-body_part-LEFT_LOWER_LEG = Lewe Podudzie
-body_part-LEFT_FOOT = Lewa Stopa
+body_part-LEFT_SHOULDER = Lewe ramię
+body_part-LEFT_UPPER_ARM = Lewy biceps
+body_part-LEFT_LOWER_ARM = Lewe przedramię
+body_part-LEFT_HAND = Lewa dłoń
+body_part-LEFT_UPPER_LEG = Lewe udo
+body_part-LEFT_LOWER_LEG = Lewe podudzie
+body_part-LEFT_FOOT = Lewa stopa
 
 ## Proportions
 
 skeleton_bone-NONE = Brak
-skeleton_bone-HEAD = Przesunięcie Głowy
-skeleton_bone-NECK = Długość Szyi
+skeleton_bone-HEAD = Przesunięcie głowy
+skeleton_bone-NECK = Długość szyi
 skeleton_bone-torso_group = Długość torsu
-skeleton_bone-UPPER_CHEST = Górna długość klatki piersiowej
-skeleton_bone-CHEST_OFFSET = Przesunięcie Klatki Piersiowej
-skeleton_bone-CHEST = Długość Klatki Piersiowej
-skeleton_bone-WAIST = Długość Talii
-skeleton_bone-HIP = Długość Bioder
-skeleton_bone-HIP_OFFSET = Przesunięcie Bioder
-skeleton_bone-HIPS_WIDTH = Szerokość Bioder
+skeleton_bone-UPPER_CHEST = Długość górnej części klatki piersiowej
+skeleton_bone-CHEST_OFFSET = Przesunięcie klatki piersiowej
+skeleton_bone-CHEST = Długość klatki piersiowej
+skeleton_bone-WAIST = Długość talii
+skeleton_bone-HIP = Długość bioder
+skeleton_bone-HIP_OFFSET = Przesunięcie bioder
+skeleton_bone-HIPS_WIDTH = Szerokość bioder
 skeleton_bone-leg_group = Długość nóg
-skeleton_bone-UPPER_LEG = Długość Górnej Części Nogi
-skeleton_bone-LOWER_LEG = Długość Dolnej Części Nogi
-skeleton_bone-FOOT_LENGTH = Długość Stopy
-skeleton_bone-FOOT_SHIFT = Przesunięcie Stopy
-skeleton_bone-SKELETON_OFFSET = Przesunięcie Szkieletu
-skeleton_bone-SHOULDERS_DISTANCE = Odległość Ramion
-skeleton_bone-SHOULDERS_WIDTH = Szerokość Ramion
+skeleton_bone-UPPER_LEG = Długość górnej części nogi
+skeleton_bone-LOWER_LEG = Długość dolnej części nogi
+skeleton_bone-FOOT_LENGTH = Długość stopy
+skeleton_bone-FOOT_SHIFT = Przesunięcie stopy
+skeleton_bone-SKELETON_OFFSET = Przesunięcie szkieletu
+skeleton_bone-SHOULDERS_DISTANCE = Odległość ramion
+skeleton_bone-SHOULDERS_WIDTH = Szerokość ramion
 skeleton_bone-arm_group = Długość ramienia
-skeleton_bone-UPPER_ARM = Długość Bicepsa
-skeleton_bone-LOWER_ARM = Długość PrzedRamienia
-skeleton_bone-HAND_Y = Odległość ręki Y
-skeleton_bone-HAND_Z = Odległość ręki Z
-skeleton_bone-ELBOW_OFFSET = Przesunięcie Łokcia
+skeleton_bone-UPPER_ARM = Długość bicepsa
+skeleton_bone-LOWER_ARM = Długość przedramienia
+skeleton_bone-HAND_Y = Odległość dłoni w osi Y
+skeleton_bone-HAND_Z = Odległość dłoni w osi Z
+skeleton_bone-ELBOW_OFFSET = Przesunięcie łokcia
 
 ## Tracker reset buttons
 
 reset-reset_all = Zresetuj wszystkie wymiary
 reset-full = Pełny Reset
-reset-mounting = Zresetuj Położenie
-reset-yaw = Reset Odchylenia
+reset-mounting = Zresetuj położenie
+reset-yaw = Reset odchylenia
 
 ## Serial detection stuff
 
-serial_detection-new_device-p0 = Wykryto Nowe Urządzenie.
+serial_detection-new_device-p0 = Wykryto nowe urządzenie!
 serial_detection-new_device-p1 = Wprowadź dane Wi-Fi!
 serial_detection-new_device-p2 = Wybierz co chcesz z nim zrobić.
 serial_detection-open_wifi = Połącz z Wi-Fi
@@ -101,7 +101,7 @@ navbar-home = Strona Główna
 navbar-body_proportions = Proporcje Ciała
 navbar-trackers_assign = Przydzielenie Trackerów
 navbar-mounting = Kalibracja Pozycji
-navbar-onboarding = Wstępna Konfiguracja
+navbar-onboarding = Wstępna konfiguracja
 navbar-settings = Ustawienia
 
 ## Biovision hierarchy recording
@@ -116,9 +116,9 @@ tracking-paused = Wznów śledzenie
 
 ## Widget: Overlay settings
 
-widget-overlay = Overlay
-widget-overlay-is_visible_label = Pokaż Overlay w SteamVR
-widget-overlay-is_mirrored_label = Pokaż Overlay jako Lustro
+widget-overlay = Nakładka
+widget-overlay-is_visible_label = Wyświetlaj nakładkę w SteamVR
+widget-overlay-is_mirrored_label = Wyświetlaj nakładkę w lustrzanym odbiciu
 
 ## Widget: Drift compensation
 
@@ -130,11 +130,11 @@ widget-clear_mounting = Wyczyść resetowanie montażu
 
 ## Widget: Developer settings
 
-widget-developer_mode = Tryb Dewelopera
+widget-developer_mode = Tryb deweloperski
 widget-developer_mode-high_contrast = Wysoki kontrast
 widget-developer_mode-precise_rotation = Wyświetlanie dokładniejszej rotacji
 widget-developer_mode-fast_data_feed = Szybkie przesyłanie danych
-widget-developer_mode-filter_slimes_and_hmd = Filtruj slimy i HMD
+widget-developer_mode-filter_slimes_and_hmd = Filtruj Slime i HMD
 widget-developer_mode-sort_by_name = Sortuj według nazwy
 widget-developer_mode-raw_slime_rotation = Surowa rotacja
 widget-developer_mode-more_info = Więcej info
@@ -155,11 +155,11 @@ widget-skeleton_visualizer-hide = Ukryj
 
 tracker-status-none = Brak Statusu
 tracker-status-busy = Zajęty
-tracker-status-error = Error
+tracker-status-error = Błąd
 tracker-status-disconnected = Rozłączono
-tracker-status-occluded = Zablokowany
-tracker-status-ok = Połączono
-tracker-status-timed_out = Sesja wygasła
+tracker-status-occluded = Zasłonięty
+tracker-status-ok = OK
+tracker-status-timed_out = Wygasły
 
 ## Tracker status columns
 
@@ -179,8 +179,8 @@ tracker-table-column-url = URL
 tracker-rotation-front = Przód
 tracker-rotation-front_left = Przedni lewy
 tracker-rotation-front_right = Przedni prawy
-tracker-rotation-left = Lewa
-tracker-rotation-right = Prawa
+tracker-rotation-left = Lewy
+tracker-rotation-right = Prawy
 tracker-rotation-back = Tył
 tracker-rotation-back_left = Lewy tył
 tracker-rotation-back_right = Prawy tył
@@ -193,8 +193,8 @@ tracker-infos-manufacturer = Producent
 tracker-infos-display_name = Wyświetlana Nazwa
 tracker-infos-custom_name = Niestandardowa Nazwa
 tracker-infos-url = Tracker URL
-tracker-infos-version = Wersja Oprogramowania
-tracker-infos-hardware_rev = Wersja Sprzętu
+tracker-infos-version = Wersja oprogramowania
+tracker-infos-hardware_rev = Rewizja sprzętu
 tracker-infos-hardware_identifier = Identyfikator sprzętu
 tracker-infos-imu = Czujnik IMU
 tracker-infos-board_type = Płyta główna
@@ -205,14 +205,14 @@ tracker-infos-network_version = Wersja protokołu
 tracker-settings-back = Wróć do listy trackerów
 tracker-settings-title = Ustawienia Trackerów
 tracker-settings-assignment_section = Przydzielanie
-tracker-settings-assignment_section-description = Do jakiej części ciała jest przydzielony tracker.
+tracker-settings-assignment_section-description = Do jakiej części ciała przydzielony jest tracker.
 tracker-settings-assignment_section-edit = Edytuj
 tracker-settings-mounting_section = Położenie Trackera
-tracker-settings-mounting_section-description = Gdzie jest Tracker zamontowany?
+tracker-settings-mounting_section-description = Gdzie zamontowany jest tracker?
 tracker-settings-mounting_section-edit = Edytuj
-tracker-settings-drift_compensation_section = Allow drift compensation
-tracker-settings-drift_compensation_section-description = Czy ten tracker powinien kompensować dryf, gdy kompensacja dryfu jest włączona?
-tracker-settings-drift_compensation_section-edit = Allow drift compensation
+tracker-settings-drift_compensation_section = Pozwalaj na kompensację dryfu
+tracker-settings-drift_compensation_section-description = Czy ten tracker powinien być korygowany, gdy kompensacja dryfu jest włączona?
+tracker-settings-drift_compensation_section-edit = Pozwalaj na kompensację dryfu
 # The .<name> means it's an attribute and it's related to the top key.
 # In this case that is the settings for the assignment section.
 tracker-settings-name_section = Nazwa Trackera
@@ -224,7 +224,7 @@ tracker-settings-forget-label = Zapomnij o trackerze
 
 ## Tracker part card info
 
-tracker-part_card-no_name = Brak Nazwy
+tracker-part_card-no_name = Bez nazwy
 tracker-part_card-unassigned = Nieprzydzielony
 
 ## Body assignment menu
@@ -318,7 +318,12 @@ settings-general-steamvr-trackers-left_elbow = Lewy łokieć
 settings-general-steamvr-trackers-right_elbow = Prawy łokieć
 settings-general-steamvr-trackers-left_hand = Lewa dłoń
 settings-general-steamvr-trackers-right_hand = Prawa dłoń
+settings-general-steamvr-trackers-tracker_toggling = Automatyczne przypisanie wirtualnych trackerów
 settings-general-steamvr-trackers-tracker_toggling-description = Automatycznie obsługuje włączanie i wyłączanie wirtualnych trackerów SteamVR w zależności od bieżących przypisań fizycznych trackerów
+settings-general-steamvr-trackers-tracker_toggling-label = Automatyczne przypisanie wirtualnych trackerów SteamVR
+settings-general-steamvr-trackers-hands-warning =
+    <b>Ostrzeżenie:</b> trackery na dłoniach zastąpią kontrolery.¶
+    Nie jest to typowa konfiguracja. Czy kontynuować?
 settings-general-steamvr-trackers-hands-warning-cancel = Anuluj
 settings-general-steamvr-trackers-hands-warning-done = Tak
 
@@ -338,6 +343,7 @@ settings-general-tracker_mechanics-filtering-type-smoothing-description = Wygła
 settings-general-tracker_mechanics-filtering-type-prediction = Przewidywanie
 settings-general-tracker_mechanics-filtering-type-prediction-description = Zmniejsza opóźnienie i zwiększa dynamikę ruchów, ale może dodać trochę drgań.
 settings-general-tracker_mechanics-filtering-amount = Ilość
+settings-general-tracker_mechanics-yaw-reset-smooth-time = Czas wygładzania resetu odchylenia (0s wyłącza wygładzanie)
 settings-general-tracker_mechanics-drift_compensation = Kompensacja dryfu
 # This cares about multilines
 settings-general-tracker_mechanics-drift_compensation-description =
@@ -346,6 +352,11 @@ settings-general-tracker_mechanics-drift_compensation-description =
 settings-general-tracker_mechanics-drift_compensation-enabled-label = Kompensacja dryfu
 settings-general-tracker_mechanics-drift_compensation-amount-label = Compensation amount
 settings-general-tracker_mechanics-drift_compensation-max_resets-label = Użyj maksymalnie x ostatnich resetów
+settings-general-tracker_mechanics-save_mounting_reset = Zapisz pozycję trackerów na ciele
+settings-general-tracker_mechanics-save_mounting_reset-description =
+    Zapisuje kalibrację pozycji trackerów na ciele pomiędzy ponownymi uruchomieniami. Użyteczne¶
+    podczas noszenia stroju, w którym trackery przymocowane sa na stałe. <b>Niezalecane dla zwykłych użytkowników z odpinanymi trackerami!</b>
+settings-general-tracker_mechanics-save_mounting_reset-enabled-label = Zapisz pozycję trackerów
 
 ## FK/Tracking settings
 
@@ -471,6 +482,7 @@ settings-general-interface-connected_trackers_warning-description = Ta opcja wy�
 settings-general-interface-connected_trackers_warning-label = Ostrzeżenie o podłączonych trackerach przy wyjściu
 settings-general-interface-use_tray = Minimalizuj do zasobnika systemowego
 settings-general-interface-use_tray-description = Pozwala zamknąć okno bez wyłączania serwera SlimeVR, aby używać trackerów bez interfejsu graficznego.
+settings-general-interface-use_tray-label = Minimalizuj do zasobnika systemowego
 
 ## Serial settings
 
@@ -510,11 +522,11 @@ settings-osc-router-network-description =
     Ustaw porty do odbierania i wysyłania danych.
     Mogą to być takie same porty, jak inne porty używane na serwerze SlimeVR.
 settings-osc-router-network-port_in =
-    .label = Port In
-    .placeholder = Port in (default: 9002)
+    .label = Port wejściowy
+    .placeholder = Port wejściowy (domyślnie: 9002)
 settings-osc-router-network-port_out =
-    .label = Port Out
-    .placeholder = Port out (default: 9000)
+    .label = Port wyjściowy
+    .placeholder = Port wyjściowy (domyślnie: 9000)
 settings-osc-router-network-address = Adres sieciowy
 settings-osc-router-network-address-description = Ustaw adres, na który mają być wysyłane dane.
 settings-osc-router-network-address-placeholder = IPV4 address
@@ -539,7 +551,7 @@ settings-osc-vrchat-network-port_out =
     .placeholder = Port out (default: 9000)
 settings-osc-vrchat-network-address = Adres sieciowy
 settings-osc-vrchat-network-address-description = Wybierz adres, na który chcesz wysłać dane do VRChat (sprawdź ustawienia Wi-Fi na swoim urządzeniu).
-settings-osc-vrchat-network-address-placeholder = VRChat ip address
+settings-osc-vrchat-network-address-placeholder = Adres IP VRChata
 settings-osc-vrchat-network-trackers = Trackers
 settings-osc-vrchat-network-trackers-description = Przełącz wysyłanie określonych trackerów przez OSC.
 settings-osc-vrchat-network-trackers-chest = Klatka piersiowa
@@ -834,14 +846,14 @@ onboarding-automatic_mounting-done-title = Rotacja trackerów została skalibrow
 onboarding-automatic_mounting-done-description = Kalibracja skończona!
 onboarding-automatic_mounting-done-restart = Cofnij się na początek
 onboarding-automatic_mounting-mounting_reset-title = Kalibracja Pozycji
-onboarding-automatic_mounting-mounting_reset-step-0 = 1. Zrób pozycje "na Małysza" z wygiętymi nogami, tułów pochylony do przodu z wygiętymi rękami.
+onboarding-automatic_mounting-mounting_reset-step-0 = 1. Zrób pozycje "na Małysza" z wygiętymi nogami, tułowiem pochylonym do przodu z wygiętymi rękami.
 onboarding-automatic_mounting-mounting_reset-step-1 = 2. Naciśnij "Zresetuj Położenie" i poczekaj 3 sekundy zanim trackery się zresetują.
 onboarding-automatic_mounting-preparation-title = Przygotowania
 onboarding-automatic_mounting-preparation-step-0 = 1. Stań prosto z rękami wyciągniętymi na bok.
 onboarding-automatic_mounting-preparation-step-1 = 2. Naciśnij "Reset" i poczekaj 3 sekundy zanim trackery się zresetują.
 onboarding-automatic_mounting-put_trackers_on-title = Załóż trackery
-onboarding-automatic_mounting-put_trackers_on-description = Aby skalibrować rotacje, użyjemy trackerów które przed chwilą przypisałeś. Załóż wszystkie trackery, będziesz widział który to który na postaci po prawej.
-onboarding-automatic_mounting-put_trackers_on-next = Mam wszystkie trackery założone
+onboarding-automatic_mounting-put_trackers_on-description = Aby skalibrować rotacje, użyjemy trackerów które przypisano przed chwilą. Załóż wszystkie trackery, możesz je odróznić na postaci po prawej.
+onboarding-automatic_mounting-put_trackers_on-next = Wszystkie trackery założone
 
 ## Tracker proportions method choose
 
@@ -899,13 +911,16 @@ onboarding-automatic_proportions-check_height-title = Sprawdź swój wzrost
 onboarding-automatic_proportions-check_height-description = Używamy Twojego wzrostu jako podstawy naszych pomiarów, używając wzrostu HMD jako przybliżenia Twojego rzeczywistego wzrostu, ale lepiej samemu sprawdzić, czy są prawidłowe!
 # All the text is in bold!
 onboarding-automatic_proportions-check_height-calculation_warning = Naciśnij przycisk stojąc <u>wyprostowany</u>, aby obliczyć swój wzrost. Masz 3 sekundy po naciśnięciu przycisku!
+onboarding-automatic_proportions-check_height-guardian_tip =
+    Jeśli korzystasz z samodzielnego zestawu VR, upewnij się, że twoja granica¶
+    bezpieczeństwa (guardian) jest włączona, aby poprawnie rozpoznać Twój wzrost!
 onboarding-automatic_proportions-check_height-fetch_height = Stoję!
 # Context is that the height is unknown
 onboarding-automatic_proportions-check_height-unknown = Nieznany
 # Shows an element below it
 onboarding-automatic_proportions-check_height-hmd_height1 = Twoja wysokość HMD to
 # Shows an element below it
-onboarding-automatic_proportions-check_height-height1 = Twoje rzeczywisty wzrost to
+onboarding-automatic_proportions-check_height-height1 = więc twój rzeczywisty wzrost to
 onboarding-automatic_proportions-check_height-next_step = Są w porządku
 onboarding-automatic_proportions-start_recording-title = Bądź gotowy żeby się ruszać
 onboarding-automatic_proportions-start_recording-description = Będziemy teraz nagrywać specyficzne pozycje i ruchy. Będą one pokazane w następnym okienku. Bądź gotowy po naciśnięciu przycisku!
@@ -930,17 +945,17 @@ onboarding-automatic_proportions-recording-timer =
         [many] Pozostało { $time } sekund
        *[other] Pozostało { $time } sekund
     }
-onboarding-automatic_proportions-verify_results-title = Zweryfikuj Wyniki
+onboarding-automatic_proportions-verify_results-title = Zweryfikuj wyniki
 onboarding-automatic_proportions-verify_results-description = Sprawdź wyniki poniżej, czy są prawidłowe?
-onboarding-automatic_proportions-verify_results-results = Wyniki Nagrywania
+onboarding-automatic_proportions-verify_results-results = Wyniki nagrywania
 onboarding-automatic_proportions-verify_results-processing = Przetwarzanie wyniku
-onboarding-automatic_proportions-verify_results-redo = Powtórz Nagrywanie
-onboarding-automatic_proportions-verify_results-confirm = Są Prawidłowe
-onboarding-automatic_proportions-done-title = Zmierzono oraz Zapisano.
+onboarding-automatic_proportions-verify_results-redo = Powtórz nagranie
+onboarding-automatic_proportions-verify_results-confirm = Wyniki prawidłowe
+onboarding-automatic_proportions-done-title = Zmierzono oraz zapisano.
 onboarding-automatic_proportions-done-description = Twoja kalibracja ciała została zakończona!
 onboarding-automatic_proportions-error_modal =
     <b>Ostrzeżenie:</b> Wykryto błąd podczas szacowania proporcji!
-    Proszę <docs>sprawdź dokumenty</docs> lub dołącz do naszego <discord>Discord</discord>, aby uzyskać pomoc ^_^
+    Proszę <docs>sprawdź dokumentację</docs> lub dołącz do naszego <discord>Discord</discord>, aby uzyskać pomoc ^_^
 onboarding-automatic_proportions-error_modal-confirm = Zrozumiano!
 
 ## Home
@@ -964,12 +979,13 @@ status_system-StatusSteamVRDisconnected =
         [steamvr_feeder] Nie można połączyć się z aplikacją SlimeVR Feeder.
        *[other] Nie można połączyć się ze SteamVR przez sterownik SlimeVR.
     }
-status_system-StatusTrackerError = Moduł śledzący { $trackerName } ma błąd.
+status_system-StatusTrackerError = Tracker { $trackerName } ma błąd.
 
 ## Tray Menu
 
 tray_menu-show = Pokaż
 tray_menu-hide = Ukryj
+tray_menu-quit = Zakończ
 
 ## First exit modal
 
