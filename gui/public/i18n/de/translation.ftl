@@ -218,6 +218,9 @@ tracker-settings-drift_compensation_section-edit = Erlaube Drift Kompensierung
 tracker-settings-name_section = Trackername
 tracker-settings-name_section-description = Geben Sie ihm einen süßen Spitznamen :)
 tracker-settings-name_section-placeholder = NightyBeast's linkes Bein
+tracker-settings-forget = Tracker Vergessen
+tracker-settings-forget-description = Entfernt den Tracker vom SlimeVR Server und verhindert, dass er sich wieder verbindet, bis der Server neu gestartet wurde. Die Konfiguration des Trackers geht nicht verloren.
+tracker-settings-forget-label = Tracker Vergessen
 
 ## Tracker part card info
 
@@ -307,6 +310,14 @@ settings-general-steamvr-description =
     Nützlich für Spiele oder Apps, die nur bestimmte Tracker unterstützen.
 settings-general-steamvr-trackers-waist = Taille
 settings-general-steamvr-trackers-chest = Brust
+settings-general-steamvr-trackers-left_foot = Linker Fuß
+settings-general-steamvr-trackers-right_foot = Rechter Fuß
+settings-general-steamvr-trackers-left_knee = Linkes Knie
+settings-general-steamvr-trackers-right_knee = Rechtes Knie
+settings-general-steamvr-trackers-left_elbow = Linker Ellenbogen
+settings-general-steamvr-trackers-right_elbow = Rechter Ellenbogen
+settings-general-steamvr-trackers-left_hand = Linke Hand
+settings-general-steamvr-trackers-right_hand = Rechte Hand
 settings-general-steamvr-trackers-tracker_toggling = Automatische Tracker Zuweisung
 settings-general-steamvr-trackers-tracker_toggling-label = Automatische Tracker Zuweisung
 settings-general-steamvr-trackers-hands-warning-cancel = Abbrechen
@@ -478,6 +489,7 @@ settings-serial-factory_reset-warning-cancel = Abbruch
 settings-serial-get_infos = Informationen abrufen
 settings-serial-serial_select = Wählen Sie einen seriellen Anschluss
 settings-serial-auto_dropdown_item = Auto
+settings-serial-get_wifi_scan = WLAN-Scan
 
 ## OSC router settings
 
@@ -697,6 +709,7 @@ onboarding-assign_trackers-assigned =
     } zugewiesen
 onboarding-assign_trackers-advanced = Erweiterte Zuweisungspositionen anzeigen
 onboarding-assign_trackers-next = Ich habe alle Tracker zugewiesen
+onboarding-assign_trackers-mirror_view = Ansicht spiegeln
 
 ## Tracker assignment warnings
 
@@ -939,6 +952,7 @@ tray_menu-quit = Beenden
 
 ## First exit modal
 
+tray_or_exit_modal-radio-exit = Beenden
 tray_or_exit_modal-radio-tray = In die Taskleiste minimieren
 tray_or_exit_modal-submit = Speichern
 tray_or_exit_modal-cancel = Abbruch
