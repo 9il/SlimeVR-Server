@@ -24,6 +24,7 @@ tips-do_not_move_heels = Během nahrávání se ujistěte, že se vaše paty nep
 tips-file_select = Nahrajte soubory přetažením zde, nebo tlačítkem <u>procházet</u>
 tips-tap_setup = Pro výběr trackeru na něj můžete dvakrát pomalu poklepat, místo výběru z nabídky.
 tips-turn_on_tracker = Máte oficiální SlimeVR trackery? <b><em>Po připojení k PC je nezapomeňte zapnout!</em></b>
+tips-failed_webgl = Načtení WebGL selhalo.
 
 ## Body parts
 
@@ -197,6 +198,7 @@ tracker-infos-hardware_rev = Revize hardwaru
 tracker-infos-hardware_identifier = ID hardwaru
 tracker-infos-imu = Senzor IMU
 tracker-infos-board_type = Základní deska
+tracker-infos-network_version = Verze protokolu
 
 ## Tracker settings
 
@@ -216,6 +218,8 @@ tracker-settings-drift_compensation_section-edit = Povolit kompenzaci driftu
 tracker-settings-name_section = Název trackeru
 tracker-settings-name_section-description = Třeba nějakou roztomilou přezdívku :)
 tracker-settings-name_section-placeholder = Erimelova levá tlapka
+tracker-settings-forget = Zapomenout tracker
+tracker-settings-forget-label = Zapomenout tracker
 
 ## Tracker part card info
 
@@ -305,10 +309,10 @@ settings-general-steamvr-description =
     Užitečné pro hry nebo aplikace, které podporují pouze určité trackery.
 settings-general-steamvr-trackers-waist = Pás
 settings-general-steamvr-trackers-chest = Hrudník
-settings-general-steamvr-trackers-feet = Chodidla
-settings-general-steamvr-trackers-knees = Kolena
-settings-general-steamvr-trackers-elbows = Lokty
-settings-general-steamvr-trackers-hands = Ruce
+settings-general-steamvr-trackers-tracker_toggling = Automatické přiřazení trackeru
+settings-general-steamvr-trackers-tracker_toggling-description = Automaticky zapne trackery ve SteamVR v závislosti na aktuálním přiřazením trackerů.
+settings-general-steamvr-trackers-hands-warning-cancel = Zrušit
+settings-general-steamvr-trackers-hands-warning-done = Ano
 
 ## Tracker mechanics
 
@@ -334,6 +338,7 @@ settings-general-tracker_mechanics-drift_compensation-description =
 settings-general-tracker_mechanics-drift_compensation-enabled-label = Kompenzace driftu
 settings-general-tracker_mechanics-drift_compensation-amount-label = Množství kompenzace
 settings-general-tracker_mechanics-drift_compensation-max_resets-label = Použít až x posledních obnovení
+settings-general-tracker_mechanics-save_mounting_reset-enabled-label = Uložit "Kalibraci nasazení"
 
 ## FK/Tracking settings
 
@@ -882,3 +887,5 @@ tray_or_exit_modal-cancel = Zrušit
 
 ## Unknown device modal
 
+unknown_device-modal-confirm = Jasně!
+unknown_device-modal-forget = Ignoruj
