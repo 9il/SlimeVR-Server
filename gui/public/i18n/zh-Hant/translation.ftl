@@ -198,6 +198,7 @@ tracker-infos-hardware_rev = 硬體版本
 tracker-infos-hardware_identifier = 硬體 ID
 tracker-infos-imu = 慣性測量單元 (IMU)
 tracker-infos-board_type = 主板
+tracker-infos-network_version = 通訊協定版本
 
 ## Tracker settings
 
@@ -309,10 +310,22 @@ settings-general-steamvr-description =
     對於只支援特定追蹤器的遊戲或應用程式，本功能會有所幫助。
 settings-general-steamvr-trackers-waist = 腰部
 settings-general-steamvr-trackers-chest = 胸部
-settings-general-steamvr-trackers-feet = 腳部
-settings-general-steamvr-trackers-knees = 膝蓋
-settings-general-steamvr-trackers-elbows = 肘部
-settings-general-steamvr-trackers-hands = 手部
+settings-general-steamvr-trackers-left_foot = 左腳
+settings-general-steamvr-trackers-right_foot = 右腳
+settings-general-steamvr-trackers-left_knee = 左膝
+settings-general-steamvr-trackers-right_knee = 右膝
+settings-general-steamvr-trackers-left_elbow = 左手肘
+settings-general-steamvr-trackers-right_elbow = 右手肘
+settings-general-steamvr-trackers-left_hand = 左手
+settings-general-steamvr-trackers-right_hand = 右手
+settings-general-steamvr-trackers-tracker_toggling = 自動追蹤器分配
+settings-general-steamvr-trackers-tracker_toggling-description = 根據目前的追蹤器分配，自動處理 SteamVR 的追蹤器的啟用與停用
+settings-general-steamvr-trackers-tracker_toggling-label = 自動追蹤器分配
+settings-general-steamvr-trackers-hands-warning =
+    <b>警告：</b>手部追蹤器將會取代控制器的追蹤。
+    您確定嗎？
+settings-general-steamvr-trackers-hands-warning-cancel = 取消
+settings-general-steamvr-trackers-hands-warning-done = 確定
 
 ## Tracker mechanics
 
@@ -330,6 +343,7 @@ settings-general-tracker_mechanics-filtering-type-smoothing-description = 讓運
 settings-general-tracker_mechanics-filtering-type-prediction = 預測型
 settings-general-tracker_mechanics-filtering-type-prediction-description = 減少延遲並使移動更敏捷，但可能會增加一些抖動。
 settings-general-tracker_mechanics-filtering-amount = 濾波強度
+settings-general-tracker_mechanics-yaw-reset-smooth-time = 左右偏擺重置平滑過渡時間（0秒為關閉）
 settings-general-tracker_mechanics-drift_compensation = 偏移補償
 # This cares about multilines
 settings-general-tracker_mechanics-drift_compensation-description =
@@ -338,6 +352,11 @@ settings-general-tracker_mechanics-drift_compensation-description =
 settings-general-tracker_mechanics-drift_compensation-enabled-label = 偏移補償
 settings-general-tracker_mechanics-drift_compensation-amount-label = 補償量
 settings-general-tracker_mechanics-drift_compensation-max_resets-label = 使用幾次的重置結果？
+settings-general-tracker_mechanics-save_mounting_reset = 儲存自動配戴重置的校正
+settings-general-tracker_mechanics-save_mounting_reset-description =
+    儲存自動配戴重置的校正，重新啟動 SlimeVR 後不需要再進行校正。
+    本設定適用於動捕服，因為多次穿戴後追蹤器的位置不會變化。<b>不建議一般使用者使用！</b>
+settings-general-tracker_mechanics-save_mounting_reset-enabled-label = 儲存自動配戴重置的校正
 
 ## FK/Tracking settings
 
