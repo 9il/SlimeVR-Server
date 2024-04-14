@@ -23,6 +23,8 @@ tips-find_tracker = ¿No estás seguro de qué tracker es el correcto? Agitalo y
 tips-do_not_move_heels = Asegúrate de no mover los talones durante el guardado de datos.
 tips-file_select = Arrastra y suelta los archivos para usarlos o <u>navega</u>.
 tips-tap_setup = Haz clic en el menú o golpea suavemente el tracker 2 veces para seleccionarlo automaticamente.
+tips-turn_on_tracker = ¿Estás usando trackers oficiales de SlimeVR? Recuerda <b><em>encender el tracker</em></b> antes de conectarlo a la PC!
+tips-failed_webgl = No se pudo iniciar WebGL.
 
 ## Body parts
 
@@ -196,6 +198,7 @@ tracker-infos-hardware_rev = Revisión del hardware
 tracker-infos-hardware_identifier = ID de hardware
 tracker-infos-imu = Sensor IMU
 tracker-infos-board_type = Placa principal
+tracker-infos-network_version = Versión de protocolo
 
 ## Tracker settings
 
@@ -215,6 +218,9 @@ tracker-settings-drift_compensation_section-edit = Permitir compensación de dri
 tracker-settings-name_section = Nombre del tracker
 tracker-settings-name_section-description = Dale un sobrenombre lindo :)
 tracker-settings-name_section-placeholder = Pata izquierda del Eevee
+tracker-settings-forget = Olvidar tracker
+tracker-settings-forget-description = Elimina el tracker del servidor SlimeVR y evita que se conecte a él hasta que se reinicie el servidor. La configuración del tracker no se perderá.
+tracker-settings-forget-label = Olvidar tracker
 
 ## Tracker part card info
 
@@ -304,10 +310,11 @@ settings-general-steamvr-description =
     Útil para juegos o aplicaciones que solo soportan ciertos trackers.
 settings-general-steamvr-trackers-waist = Cintura
 settings-general-steamvr-trackers-chest = Pecho
-settings-general-steamvr-trackers-feet = Pies
-settings-general-steamvr-trackers-knees = Rodillas
-settings-general-steamvr-trackers-elbows = Codos
-settings-general-steamvr-trackers-hands = Manos
+settings-general-steamvr-trackers-tracker_toggling = Asignación automática de trackers
+settings-general-steamvr-trackers-tracker_toggling-description = Gestiona automáticamente la activación o desactivación de los trackers de SteamVR en función de tus asignaciones en los trackers actuales
+settings-general-steamvr-trackers-hands-warning = <b>Advertencia:</b> Los trackers de manos anularán tus mandos. ¿Estás seguro?
+settings-general-steamvr-trackers-hands-warning-cancel = Cancelar
+settings-general-steamvr-trackers-hands-warning-done = Sí
 
 ## Tracker mechanics
 
@@ -333,6 +340,10 @@ settings-general-tracker_mechanics-drift_compensation-description =
 settings-general-tracker_mechanics-drift_compensation-enabled-label = Compensación en la desviación
 settings-general-tracker_mechanics-drift_compensation-amount-label = Cantidad de compensación
 settings-general-tracker_mechanics-drift_compensation-max_resets-label = Usar los últimos X reinicios.
+settings-general-tracker_mechanics-save_mounting_reset = Guardar la calibración de reajuste de montaje automático
+settings-general-tracker_mechanics-save_mounting_reset-description =
+    Guarda las calibraciones de reajuste de montaje automático para los trackers entre reinicios. Útil 
+    cuando se lleva un traje en el que los trackers no se mueven entre sesiones. <b>No recomendado para usuarios normales!</b>
 
 ## FK/Tracking settings
 
@@ -453,6 +464,9 @@ settings-general-interface-feedback_sound-volume = Volumen del sonido de feedbac
 settings-general-interface-connected_trackers_warning = Advertencia de trackers conectados
 settings-general-interface-connected_trackers_warning-description = Esta opción mostrará una ventana emergente cada vez que intentes salir de SlimeVR mientras tengas uno o más trackers conectados. Te recuerda que debes apagar los trackers cuando hayas terminado para ahorrar batería.
 settings-general-interface-connected_trackers_warning-label = Aviso de trackers conectados al cerrar
+settings-general-interface-use_tray = Minimizar a la bandeja
+settings-general-interface-use_tray-description = Te permite cerrar la ventana sin cerrar SlimeVR para que pueda seguir usándolo sin que la interfaz te moleste.
+settings-general-interface-use_tray-label = Minimizar en la bandeja del sistema
 
 ## Serial settings
 
@@ -474,6 +488,7 @@ settings-serial-factory_reset-warning-cancel = Cancelar
 settings-serial-get_infos = Obtener información
 settings-serial-serial_select = Selecciona un puerto serial
 settings-serial-auto_dropdown_item = Automático
+settings-serial-get_wifi_scan = Obtener escaneo WiFi
 
 ## OSC router settings
 
@@ -502,12 +517,22 @@ settings-osc-router-network-address-placeholder = Dirección IPV4
 
 ## OSC VRChat settings
 
+settings-osc-vrchat = VRChat OSC Trackers
+# This cares about multilines
+settings-osc-vrchat-description = Cambia la configuración específica de VRChat para recibir datos del visor (HMD) y enviar datos a los trackers para FBT sin SteamVR (ej. Quest standalone).
 settings-osc-vrchat-enable = Habilitar
 settings-osc-vrchat-enable-description = Alternar el envío y la recepción de datos
 settings-osc-vrchat-enable-label = Habilitar
 settings-osc-vrchat-network = Puertos de red
 settings-osc-vrchat-network-description = Configura los puertos para escuchar y enviar datos a VRChat.
+settings-osc-vrchat-network-port_in =
+    .label = Puerto de entrada
+    .placeholder = Puerto de entrada (Por defecto: 9001)
+settings-osc-vrchat-network-port_out =
+    .label = Puerto de salida
+    .placeholder = Puerto de salida (Por defecto: 9000)
 settings-osc-vrchat-network-address = Dirección de red
+settings-osc-vrchat-network-address-description = Elige a qué dirección enviar los datos a VRChat (Comprueba la configuración Wi-Fi de tu dispositivo).
 settings-osc-vrchat-network-address-placeholder = Dirección IP de VRChat
 settings-osc-vrchat-network-trackers = Trackers
 settings-osc-vrchat-network-trackers-chest = Pecho
@@ -584,8 +609,6 @@ onboarding-done-close = Cerrar configuración
 
 onboarding-connect_tracker-back = Volver a credenciales de Wi-Fi
 onboarding-connect_tracker-title = Conectar trackers
-onboarding-connect_tracker-description-p0 = ¡Ahora a la parte divertida, conectando todos los trackers!
-onboarding-connect_tracker-description-p1 = Simplemente conecta todos los que aún no están conectados, a través de un puerto USB.
 onboarding-connect_tracker-issue-serial = ¡Tengo problemas para conectarme!
 onboarding-connect_tracker-usb = Tracker USB
 onboarding-connect_tracker-connection_status-none = Buscando trackers
@@ -660,6 +683,7 @@ onboarding-assign_trackers-warning-RIGHT_FOOT =
 onboarding-choose_mounting-auto_mounting-label = Experimental
 # Italized text
 onboarding-choose_mounting-manual_mounting-label = Recomendado
+onboarding-choose_mounting-manual_modal-cancel = Cancelar
 
 ## Tracker manual mounting setup
 
@@ -667,6 +691,7 @@ onboarding-manual_mounting-next = Siguiente paso
 
 ## Tracker automatic mounting setup
 
+onboarding-automatic_mounting-back = Volver para entrar en VR
 onboarding-automatic_mounting-next = Siguiente paso
 onboarding-automatic_mounting-prev_step = Paso anterior
 onboarding-automatic_mounting-done-restart = Volver a intentarlo
@@ -674,15 +699,12 @@ onboarding-automatic_mounting-preparation-title = Preparación
 
 ## Tracker proportions method choose
 
-# Multiline string
-onboarding-choose_proportions-description =
-    Las proporciones físicas se usan para saber las medidas de tu cuerpo. Son requeridas para calculas la posición de los trackers.
-    Si las proporciones guardadas no coinciden con las reales, la calidad de tu tracking será peor y notaras fallos como deslizamiento, desplazamiento o tu cuerpo no coincidirá con tu avatar.
 onboarding-choose_proportions-auto_proportions = Proporciones automáticas
 # Italized text
 onboarding-choose_proportions-auto_proportions-subtitle = Recomendado
 onboarding-choose_proportions-manual_proportions = Proporciones manuales
 onboarding-choose_proportions-export = Exportar proporciones
+onboarding-choose_proportions-import-success = Importado
 onboarding-choose_proportions-file_type = Archivo de proporciones físicas
 
 ## Tracker manual proportions setup
@@ -710,4 +732,13 @@ onboarding-automatic_proportions-done-description = ¡Calibración de las propor
 
 
 ## Status system
+
+
+## Tray Menu
+
+
+## First exit modal
+
+
+## Unknown device modal
 
