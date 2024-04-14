@@ -198,6 +198,7 @@ tracker-infos-hardware_rev = Revisión del hardware
 tracker-infos-hardware_identifier = ID del hardware
 tracker-infos-imu = Sensor IMU
 tracker-infos-board_type = Placa principal
+tracker-infos-network_version = Versión del protocolo
 
 ## Tracker settings
 
@@ -309,10 +310,14 @@ settings-general-steamvr-description =
     Útil para juegos y aplicaciones que solo soportan ciertos sensores..
 settings-general-steamvr-trackers-waist = Cintura
 settings-general-steamvr-trackers-chest = Pecho
-settings-general-steamvr-trackers-feet = Pies
-settings-general-steamvr-trackers-knees = Rodillas
-settings-general-steamvr-trackers-elbows = Codos
-settings-general-steamvr-trackers-hands = Manos
+settings-general-steamvr-trackers-left_foot = Pie izquierdo
+settings-general-steamvr-trackers-right_foot = Pie derecho
+settings-general-steamvr-trackers-left_knee = Rodilla izquierda
+settings-general-steamvr-trackers-right_knee = Rodilla derecha
+settings-general-steamvr-trackers-left_elbow = Codo izquierdo
+settings-general-steamvr-trackers-right_elbow = Codo derecho
+settings-general-steamvr-trackers-left_hand = Mano izquierda
+settings-general-steamvr-trackers-right_hand = Mano derecha
 settings-general-steamvr-trackers-tracker_toggling = Asignación automatica de trackers
 settings-general-steamvr-trackers-tracker_toggling-description = Automáticamente se encarga de prender o apagar los trackers de SteamVR dependiendo de los trackers asignados a tu cuerpo
 settings-general-steamvr-trackers-tracker_toggling-label = Asignación automatica de trackers
@@ -338,6 +343,7 @@ settings-general-tracker_mechanics-filtering-type-smoothing-description = Suaviz
 settings-general-tracker_mechanics-filtering-type-prediction = Predicción
 settings-general-tracker_mechanics-filtering-type-prediction-description = Reduce la latencia y los movimientos serán más inmediatos, pero puede incrementar la inestabilidad.
 settings-general-tracker_mechanics-filtering-amount = Cantidad
+settings-general-tracker_mechanics-yaw-reset-smooth-time = Tiempo de interpolación para el reinicio horizontal (0s desactiva el suavizado)
 settings-general-tracker_mechanics-drift_compensation = Compensación de desviación
 # This cares about multilines
 settings-general-tracker_mechanics-drift_compensation-description =
@@ -346,6 +352,11 @@ settings-general-tracker_mechanics-drift_compensation-description =
 settings-general-tracker_mechanics-drift_compensation-enabled-label = Compensación de desviación
 settings-general-tracker_mechanics-drift_compensation-amount-label = Fuerza de la compensación
 settings-general-tracker_mechanics-drift_compensation-max_resets-label = Utilizar hasta los últimos x reinicios
+settings-general-tracker_mechanics-save_mounting_reset = Guardar calibración automática de reinicio de montura
+settings-general-tracker_mechanics-save_mounting_reset-description =
+    Guarda las calibraciones automáticas del reinicio de montura para los trackers entre reinicios. Útil
+    para cuando se usa un traje donde los trackers no se mueven entre sesiones. <b>¡No se recomienda para usuarios típicos!</b>
+settings-general-tracker_mechanics-save_mounting_reset-enabled-label = Guardar reinicio de montura
 
 ## FK/Tracking settings
 
