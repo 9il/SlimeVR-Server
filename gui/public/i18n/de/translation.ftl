@@ -23,6 +23,8 @@ tips-find_tracker = Sie sind sich nicht sicher, welcher Tracker welcher ist? Sch
 tips-do_not_move_heels = Stellen Sie sicher, dass Sie Ihre Fersen während der Aufnahme nicht bewegen!
 tips-file_select = Dateien per Drag & Drop verwenden oder <u>durchsuchen</u>
 tips-tap_setup = Sie können langsam 2 Mal auf Ihren Tracker tippen, um ihn auszuwählen, anstatt ihn aus dem Menü auszuwählen.
+tips-turn_on_tracker = Verwenden Sie offizielle SlimeVR-Tracker? Vergessen Sie nicht den <b><em>Tracker einzuschalten</em></b>, nachdem Sie ihn an den PC angeschlossen haben!
+tips-failed_webgl = Fehler beim Initialisieren von WebGL.
 
 ## Body parts
 
@@ -305,10 +307,10 @@ settings-general-steamvr-description =
     Nützlich für Spiele oder Apps, die nur bestimmte Tracker unterstützen.
 settings-general-steamvr-trackers-waist = Taille
 settings-general-steamvr-trackers-chest = Brust
-settings-general-steamvr-trackers-feet = Füße
-settings-general-steamvr-trackers-knees = Knie
-settings-general-steamvr-trackers-elbows = Ellbogen
-settings-general-steamvr-trackers-hands = Hände
+settings-general-steamvr-trackers-tracker_toggling = Automatische Tracker Zuweisung
+settings-general-steamvr-trackers-tracker_toggling-label = Automatische Tracker Zuweisung
+settings-general-steamvr-trackers-hands-warning-cancel = Abbrechen
+settings-general-steamvr-trackers-hands-warning-done = Ja
 
 ## Tracker mechanics
 
@@ -453,6 +455,8 @@ settings-general-interface-feedback_sound-volume = Feedback-Sound-Lautstärke
 settings-general-interface-connected_trackers_warning = Warnung zu verbundenen Trackern
 settings-general-interface-connected_trackers_warning-description = Diese Option zeigt jedes Mal ein Pop-up-Fenster an, wenn Sie versuchen, SlimeVR zu beenden, während ein oder mehrere Tracker verbunden sind. Es erinnert Sie daran, die Tracker auszuschalten, um die Akkulaufzeit zu verlängern.
 settings-general-interface-connected_trackers_warning-label = Warnung vor verbundenen Trackern beim Verlassen
+settings-general-interface-use_tray = In die Taskleiste minimieren
+settings-general-interface-use_tray-label = In die Taskleiste minimieren
 
 ## Serial settings
 
@@ -930,9 +934,20 @@ status_system-StatusTrackerError = Der Tracker "{ $trackerName }" weist einen Fe
 
 ## Tray Menu
 
+tray_menu-show = Anzeigen
+tray_menu-quit = Beenden
 
 ## First exit modal
 
+tray_or_exit_modal-radio-tray = In die Taskleiste minimieren
+tray_or_exit_modal-submit = Speichern
+tray_or_exit_modal-cancel = Abbruch
 
 ## Unknown device modal
 
+unknown_device-modal-title = Ein neuer Tracker wurde gefunden!
+unknown_device-modal-description =
+    Es gibt einen neuen Tracker mit der MAC-Adresse <b>{ $deviceId }</b>.
+    Möchten Sie diesen mit SlimeVR verbinden?
+unknown_device-modal-confirm = Sicher!
+unknown_device-modal-forget = Ignorieren
