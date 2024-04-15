@@ -319,7 +319,11 @@ settings-general-steamvr-trackers-right_elbow = Rechter Ellenbogen
 settings-general-steamvr-trackers-left_hand = Linke Hand
 settings-general-steamvr-trackers-right_hand = Rechte Hand
 settings-general-steamvr-trackers-tracker_toggling = Automatische Tracker Zuweisung
+settings-general-steamvr-trackers-tracker_toggling-description = Automatisches Aktivieren und Deaktivieren von SteamVR Trackern, in Abhängigkeit von der aktuellen Tracker-Zuordnung.
 settings-general-steamvr-trackers-tracker_toggling-label = Automatische Tracker Zuweisung
+settings-general-steamvr-trackers-hands-warning =
+    <b>Warnung:</b> Handtracker übersteuern Ihre Controller.
+    Sind Sie sich sicher?
 settings-general-steamvr-trackers-hands-warning-cancel = Abbrechen
 settings-general-steamvr-trackers-hands-warning-done = Ja
 
@@ -339,6 +343,7 @@ settings-general-tracker_mechanics-filtering-type-smoothing-description = Glätt
 settings-general-tracker_mechanics-filtering-type-prediction = Vorhersage
 settings-general-tracker_mechanics-filtering-type-prediction-description = Verringert die Latenz und macht die Bewegungen schneller, kann aber Zittern erhöhen.
 settings-general-tracker_mechanics-filtering-amount = Stärke
+settings-general-tracker_mechanics-yaw-reset-smooth-time = Horizontaler Reset Glättungszeit (0s deaktiviert die Glättung)
 settings-general-tracker_mechanics-drift_compensation = Drift-Kompensierung
 # This cares about multilines
 settings-general-tracker_mechanics-drift_compensation-description =
@@ -347,6 +352,11 @@ settings-general-tracker_mechanics-drift_compensation-description =
 settings-general-tracker_mechanics-drift_compensation-enabled-label = Drift-Kompensierung
 settings-general-tracker_mechanics-drift_compensation-amount-label = Kompensierungsmenge
 settings-general-tracker_mechanics-drift_compensation-max_resets-label = Nutze die letzten x Resets
+settings-general-tracker_mechanics-save_mounting_reset = Automatische Befestigungs-Reset Kalibrierung speichern
+settings-general-tracker_mechanics-save_mounting_reset-description =
+    Speichert die automatische Befestigungs-Reset Kalibrierung für die Tracker zwischen den Neustarts. Nützlich 
+    wenn Sie einen Anzug tragen, bei dem sich die Tracker zwischen den Sitzungen nicht bewegen. <b>Für normale Benutzer nicht zu empfehlen!</b>
+settings-general-tracker_mechanics-save_mounting_reset-enabled-label = Befestigungs-Reset speichern
 
 ## FK/Tracking settings
 
@@ -467,6 +477,7 @@ settings-general-interface-connected_trackers_warning = Warnung zu verbundenen T
 settings-general-interface-connected_trackers_warning-description = Diese Option zeigt jedes Mal ein Pop-up-Fenster an, wenn Sie versuchen, SlimeVR zu beenden, während ein oder mehrere Tracker verbunden sind. Es erinnert Sie daran, die Tracker auszuschalten, um die Akkulaufzeit zu verlängern.
 settings-general-interface-connected_trackers_warning-label = Warnung vor verbundenen Trackern beim Verlassen
 settings-general-interface-use_tray = In die Taskleiste minimieren
+settings-general-interface-use_tray-description = Erlaubt Ihnen, das Fenster zu schließen, ohne den SlimeVR-Server zu beenden. Dies erlaubt Ihnen diesen weiterzuverwenden, ohne dass das Fenster stört.
 settings-general-interface-use_tray-label = In die Taskleiste minimieren
 
 ## Serial settings
@@ -650,6 +661,8 @@ onboarding-done-close = Einrichtung schließen
 
 onboarding-connect_tracker-back = Zurück zu WLAN-Zugangsdaten
 onboarding-connect_tracker-title = Verbinde Tracker
+onboarding-connect_tracker-description-p0-v1 = Kommen wir nun zum spaßigen Teil, dem Verbinden von Trackern!
+onboarding-connect_tracker-description-p1-v1 = Schließen Sie jeden Tracker nacheinander und einzeln über einen USB-Anschluss an.
 onboarding-connect_tracker-issue-serial = Ich habe Schwierigkeiten die Tracker zu verbinden!
 onboarding-connect_tracker-usb = USB Tracker
 onboarding-connect_tracker-connection_status-none = Suche nach Trackern
@@ -832,6 +845,10 @@ onboarding-automatic_mounting-put_trackers_on-next = Ich habe alle meine Tracker
 ## Tracker proportions method choose
 
 onboarding-choose_proportions = Welche Kalibrierungsmethode ist zu verwenden?
+# Multiline string
+onboarding-choose_proportions-description-v1 =
+    Wenn die Proportionen Ihres Körpers nicht mit den Gespeicherten übereinstimmen, ist die Präzision des Trackings schlechter. Außerdem können Probleme wie Skaten oder Rutschen auftreten oder, dass die Bewegungen Ihres Avatars nicht gut mit den Bewegungen Ihres Körpers übereinstimmen.
+    <b>Sie müssen Ihren Körper nur einmal messen!</b> Es sei denn, die Messwerte sind falsch oder Ihr Körper hat sich verändert, dann müssen Sie die Körperproportionen nochmal bestimmen.
 onboarding-choose_proportions-auto_proportions = Automatische Proportionen
 # Italized text
 onboarding-choose_proportions-auto_proportions-subtitle = Empfohlen
@@ -880,6 +897,7 @@ onboarding-automatic_proportions-check_height-title = Überprüfen Sie Ihre Kör
 onboarding-automatic_proportions-check_height-description = Wir benutzen die Höhe des Headsets (HMD) als eine Schätzung für Ihre tatsächliche Grösse, doch es ist besser dass Sie diese selbst überprüfen!
 # All the text is in bold!
 onboarding-automatic_proportions-check_height-calculation_warning = Bitte betätigen Sie auf den Knopf während Sie <u>aufrecht</u> stehen, um Ihre Körpergröße zu berechnen. Sie haben 3 Sekunden Zeit, nachdem Sie auf den Knopf gedrückt haben.
+onboarding-automatic_proportions-check_height-guardian_tip = Wenn Sie ein eigenständiges VR Headset verwenden, stellen Sie sicher, dass Ihr Guardian Begrenzung aktiviert ist und damit Ihre Größe korrekt ist!
 onboarding-automatic_proportions-check_height-fetch_height = Ich stehe!
 # Context is that the height is unknown
 onboarding-automatic_proportions-check_height-unknown = Unbekannt
@@ -952,6 +970,7 @@ tray_menu-quit = Beenden
 
 ## First exit modal
 
+tray_or_exit_modal-title = Was soll der Schließen-Knopf tun?
 tray_or_exit_modal-radio-exit = Beenden
 tray_or_exit_modal-radio-tray = In die Taskleiste minimieren
 tray_or_exit_modal-submit = Speichern
