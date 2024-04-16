@@ -966,11 +966,17 @@ status_system-StatusTrackerError = Der Tracker "{ $trackerName }" weist einen Fe
 ## Tray Menu
 
 tray_menu-show = Anzeigen
+tray_menu-hide = Ausblenden
 tray_menu-quit = Beenden
 
 ## First exit modal
 
 tray_or_exit_modal-title = Was soll der Schließen-Knopf tun?
+# Multiline text
+tray_or_exit_modal-description =
+    Hier können Sie auswählen, ob sich der Server beim Schließen beenden oder in die Infobereich minimiert werden soll.
+    
+    Sie können dies später in den Einstellungen der Bedienoberfläche ändern!
 tray_or_exit_modal-radio-exit = Beenden
 tray_or_exit_modal-radio-tray = In die Taskleiste minimieren
 tray_or_exit_modal-submit = Speichern
