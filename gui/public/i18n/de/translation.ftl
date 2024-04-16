@@ -476,9 +476,9 @@ settings-general-interface-feedback_sound-volume = Feedback-Sound-Lautstärke
 settings-general-interface-connected_trackers_warning = Warnung zu verbundenen Trackern
 settings-general-interface-connected_trackers_warning-description = Diese Option zeigt jedes Mal ein Pop-up-Fenster an, wenn Sie versuchen, SlimeVR zu beenden, während ein oder mehrere Tracker verbunden sind. Es erinnert Sie daran, die Tracker auszuschalten, um die Akkulaufzeit zu verlängern.
 settings-general-interface-connected_trackers_warning-label = Warnung vor verbundenen Trackern beim Verlassen
-settings-general-interface-use_tray = In die Taskleiste minimieren
+settings-general-interface-use_tray = In den Infobereich minimieren
 settings-general-interface-use_tray-description = Erlaubt Ihnen, das Fenster zu schließen, ohne den SlimeVR-Server zu beenden. Dies erlaubt Ihnen diesen weiterzuverwenden, ohne dass das Fenster stört.
-settings-general-interface-use_tray-label = In die Taskleiste minimieren
+settings-general-interface-use_tray-label = In den Infobereich minimieren
 
 ## Serial settings
 
@@ -974,11 +974,11 @@ tray_menu-quit = Beenden
 tray_or_exit_modal-title = Was soll der Schließen-Knopf tun?
 # Multiline text
 tray_or_exit_modal-description =
-    Hier können Sie auswählen, ob sich der Server beim Schließen beenden oder in die Infobereich minimiert werden soll.
+    Hier können Sie auswählen, ob sich der Server beim Schließen beenden oder in den Infobereich minimiert werden soll.
     
     Sie können dies später in den Einstellungen der Bedienoberfläche ändern!
 tray_or_exit_modal-radio-exit = Beenden
-tray_or_exit_modal-radio-tray = In die Taskleiste minimieren
+tray_or_exit_modal-radio-tray = In den Infobereich minimieren
 tray_or_exit_modal-submit = Speichern
 tray_or_exit_modal-cancel = Abbruch
 
