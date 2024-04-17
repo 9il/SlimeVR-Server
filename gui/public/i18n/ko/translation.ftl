@@ -198,6 +198,7 @@ tracker-infos-hardware_rev = 하드웨어 리비전
 tracker-infos-hardware_identifier = 하드웨어 ID
 tracker-infos-imu = IMU 센서
 tracker-infos-board_type = 메인보드
+tracker-infos-network_version = 프로토콜 버전
 
 ## Tracker settings
 
@@ -307,12 +308,24 @@ settings-general-steamvr-subtitle = SteamVR 트래커
 settings-general-steamvr-description =
     SteamVR 트래커를 켜거나 끄세요
     특정 트래커 구성만 허용하는 게임 또는 앱에서 유용해요.
-settings-general-steamvr-trackers-waist = Waist
-settings-general-steamvr-trackers-chest = Chest
-settings-general-steamvr-trackers-feet = Feet
-settings-general-steamvr-trackers-knees = Knees
-settings-general-steamvr-trackers-elbows = Elbows
-settings-general-steamvr-trackers-hands = Hands
+settings-general-steamvr-trackers-waist = 허리
+settings-general-steamvr-trackers-chest = 가슴
+settings-general-steamvr-trackers-left_foot = 왼발
+settings-general-steamvr-trackers-right_foot = 오른발
+settings-general-steamvr-trackers-left_knee = 왼쪽 무릎
+settings-general-steamvr-trackers-right_knee = 오른쪽 무릎
+settings-general-steamvr-trackers-left_elbow = 왼쪽 팔꿈치
+settings-general-steamvr-trackers-right_elbow = 오른쪽 팔꿈치
+settings-general-steamvr-trackers-left_hand = 왼손
+settings-general-steamvr-trackers-right_hand = 오른손
+settings-general-steamvr-trackers-tracker_toggling = 자동 트래커 할당
+settings-general-steamvr-trackers-tracker_toggling-description = 지정한 트래커 할당 상태에 따라 SteamVR 트래커를 자동으로 켜고 끄기
+settings-general-steamvr-trackers-tracker_toggling-label = 자동 트래커 할당
+settings-general-steamvr-trackers-hands-warning =
+    <b>경고:</b> 핸드 트래커를 사용하면 VR 컨트롤러가 작동하지 않아요. 
+    그래도 사용할까요?
+settings-general-steamvr-trackers-hands-warning-cancel = 취소
+settings-general-steamvr-trackers-hands-warning-done = 확인
 
 ## Tracker mechanics
 
@@ -338,6 +351,11 @@ settings-general-tracker_mechanics-drift_compensation-description =
 settings-general-tracker_mechanics-drift_compensation-enabled-label = 틀어짐 보정
 settings-general-tracker_mechanics-drift_compensation-amount-label = 보정 강도
 settings-general-tracker_mechanics-drift_compensation-max_resets-label = 보정에 사용할 최근 정렬 횟수
+settings-general-tracker_mechanics-save_mounting_reset = 자동 착용 방향 정렬 보정값 저장
+settings-general-tracker_mechanics-save_mounting_reset-description =
+    트래커의 자동 마운팅 리셋 보정값을 저장합니다. 트래커들의 위치가 고정된 
+    모션 캡처 슈트 같은 것을 사용할 때 유용합니다. <b>일반 사용자들에게는 권장되지 않아요!</b>
+settings-general-tracker_mechanics-save_mounting_reset-enabled-label = 착용 방향 정렬 저장
 
 ## FK/Tracking settings
 
@@ -643,8 +661,8 @@ onboarding-done-close = 마법사 닫기
 
 onboarding-connect_tracker-back = Wi-Fi 자격 증명으로 돌아가기
 onboarding-connect_tracker-title = 트래커 연결
-onboarding-connect_tracker-description-p0 = 이제 모든 트래커를 연결하는 재미있는 부분으로 가봐요!
-onboarding-connect_tracker-description-p1 = 그냥 모든 트래커를 USB 포트에 연결하기만 하면 돼요
+onboarding-connect_tracker-description-p0-v1 = 이제 트래커를 연결하는 재미있는 부분으로 가봐요!
+onboarding-connect_tracker-description-p1-v1 = USB 포트를 통해 트래커들을 한 개씩 컴퓨터에 연결해 주세요.
 onboarding-connect_tracker-issue-serial = 연결하는 데 문제가 생겼어요!
 onboarding-connect_tracker-usb = USB 트래커
 onboarding-connect_tracker-connection_status-none = 트래커 찾는 중
@@ -874,6 +892,9 @@ onboarding-automatic_proportions-check_height-title = 키를 확인하세요
 onboarding-automatic_proportions-check_height-description = 이 과정에서는 VR 헤드셋(HMD)의 높이를 사용하여 실제 키의 대략적인 값으로 삼고, 이를 측정의 기준으로 활용합니다. 하지만 직접 확인하는 것이 더 정확해요!
 # All the text is in bold!
 onboarding-automatic_proportions-check_height-calculation_warning = 버튼을 누른 후 3초 이내에 <u>바르게 서서</u> 키를 측정해 주세요!
+onboarding-automatic_proportions-check_height-guardian_tip =
+    독립형 VR 헤드셋을 사용하는 경우, 꼭 보호자와 함께하셔야 하고
+    높이가 정확하도록 플레이 영역을 설정하는 것을 잊지 말아주세요!
 onboarding-automatic_proportions-check_height-fetch_height = 서 있어요!
 # Context is that the height is unknown
 onboarding-automatic_proportions-check_height-unknown = 알 수 없음
